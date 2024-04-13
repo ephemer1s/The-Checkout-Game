@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://82ohi1st87i"]
+
+[ext_resource type="Script" path="res://scenes/main/options.gd" id="1_01me5"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_aa2kl"]
+specular_color = Color(0, 0, 0, 1)
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_01me5")
+
+[node name="PlaceholderBackground" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = SubResource("CanvasTexture_aa2kl")
+
+[node name="PlaceHolderText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 386.0
+offset_top = 127.0
+offset_right = 744.0
+offset_bottom = 242.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER "
+
+[node name="BtnBack" type="Button" parent="."]
+layout_mode = 0
+offset_left = 552.0
+offset_top = 568.0
+offset_right = 602.0
+offset_bottom = 599.0
+text = "BACK"
+
+[connection signal="pressed" from="BtnBack" to="." method="_on_btn_back_pressed"]
