@@ -40,35 +40,35 @@ func _ready() -> void:
 
 func on_mouse_entered_card() -> void:
     if cur_state == State.BAG_READY:
-        print("mouse entered card!")
+        animation_player.play("card_enter")
 
 func on_mouse_exited_card() -> void:
     if cur_state == State.BAG_READY:
-        print("mouse exited card!")
+        animation_player.play("card_exit")
 
 func on_mouse_entered_money() -> void:
     if cur_state == State.BAG_READY:
-        print("mouse entered money!")
+        animation_player.play("money_enter")
 
 func on_mouse_exited_money() -> void:
     if cur_state == State.BAG_READY:
-        print("mouse exited money!")
+        animation_player.play("money_exit")
 
 func on_mouse_entered_friend() -> void:
     if cur_state == State.BAG_READY:
-        print("mouse entered friend!")
+        animation_player.play("friend_enter")
 
 func on_mouse_exited_friend() -> void:
     if cur_state == State.BAG_READY:
-        print("mouse exited friend!")
+        animation_player.play("friend_exit")
 
 func on_mouse_entered_contract() -> void:
     if cur_state == State.BAG_READY:
-        print("mouse entered contract!")
+        animation_player.play("contract_enter")
 
 func on_mouse_exited_contract() -> void:
     if cur_state == State.BAG_READY:
-        print("mouse exited contract!")
+        animation_player.play("contract_exit")
 
 func on_mouse_entered_bag() -> void:
     hovering = true

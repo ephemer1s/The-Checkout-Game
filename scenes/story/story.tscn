@@ -16,7 +16,7 @@ position = Vector2(212, -2)
 [node name="TextBox" parent="." instance=ExtResource("3_vgjkh")]
 
 [node name="Inventory" parent="." instance=ExtResource("4_rrbw8")]
-offset_left = 170.0
-offset_top = 906.0
-offset_right = 170.0
-offset_bottom = 906.0
+offset_left = 197.0
+offset_top = 913.0
+offset_right = 197.0
+offset_bottom = 913.0
