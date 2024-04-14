@@ -107,6 +107,7 @@ func on_mouse_exited_bag() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
     if Input.is_action_just_pressed("confirm") and cur_state == State.HOVERED_BAG:
+        description_to_display.emit("")
         bag.material.set_shader_parameter("onoff", 0)
         contract.material.set_shader_parameter("onoff", 0)
         money.material.set_shader_parameter("onoff", 0)
