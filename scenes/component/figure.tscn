@@ -147,7 +147,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Figure" type="Node"]
+[node name="Figure" type="Node2D"]
 script = ExtResource("1_isves")
 
 [node name="Body" type="AnimatedSprite2D" parent="."]

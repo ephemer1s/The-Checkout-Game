@@ -10,6 +10,21 @@ border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.772549, 0.772549, 0.772549, 1)
 
+[sub_resource type="Animation" id="Animation_mmkam"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("End:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
 [sub_resource type="Animation" id="Animation_o1qbj"]
 resource_name = "triangle"
 loop_mode = 1
@@ -24,21 +39,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1.5, 0.8),
 "update": 1,
 "values": [false, true]
-}
-
-[sub_resource type="Animation" id="Animation_mmkam"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("End:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yl5f6"]
@@ -59,9 +59,9 @@ offset_top = -246.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 8
-theme_override_constants/margin_left = 32
+theme_override_constants/margin_left = 320
 theme_override_constants/margin_top = 32
-theme_override_constants/margin_right = 32
+theme_override_constants/margin_right = 96
 theme_override_constants/margin_bottom = 32
 
 [node name="Panel" type="Panel" parent="TextboxContainer"]
@@ -79,7 +79,7 @@ theme_override_constants/margin_bottom = 16
 layout_mode = 2
 
 [node name="Text" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
-custom_minimum_size = Vector2(1852, 150)
+custom_minimum_size = Vector2(1500, 1)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
