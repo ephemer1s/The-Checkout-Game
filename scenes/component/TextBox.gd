@@ -28,9 +28,11 @@ func _ready():
 func _process(delta: float) -> void:
     match current_state:
         TextBoxState.READY:
+            end_animation.stop()
             if !text_queue.is_empty():
                 display_text()
         TextBoxState.READING:
+            end_animation.stop()
             if Input.is_action_just_pressed("confirm"):
                 text_label.visible_ratio = 1.0
                 if cur_tween:
@@ -66,10 +68,10 @@ func display_text() -> void:
 
 func on_tween_completed():
     change_state(TextBoxState.FINISHED)
-    end_animation.play("triangle")
+    if !text_queue.is_empty():
+        end_animation.play("triangle")
 
 func change_state(next_state: TextBoxState) -> void:
-    current_state = next_state
     current_state = next_state
     match current_state:
         TextBoxState.READY:

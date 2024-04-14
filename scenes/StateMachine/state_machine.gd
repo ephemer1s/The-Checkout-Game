@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 
 class_name StateMachine
 
@@ -23,6 +23,7 @@ func _process(delta: float) -> void:
     cur_state.update(delta)
 
 func _physics_process(delta: float) -> void:
+    print(cur_state)
     cur_state.physics_update(delta)
 
 func transition_to_previous_state() -> void:
