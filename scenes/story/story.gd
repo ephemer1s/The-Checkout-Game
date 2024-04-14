@@ -21,4 +21,3 @@ func on_inventory_opened() -> void:
 func on_inventory_closed() -> void:
     color_rect.visible = false
     margin_container.visible = false
-

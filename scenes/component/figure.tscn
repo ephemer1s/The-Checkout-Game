@@ -1,18 +1,28 @@
-[gd_scene load_steps=29 format=3 uid="uid://bysewa54x44ui"]
+[gd_scene load_steps=43 format=3 uid="uid://bysewa54x44ui"]
 
 [ext_resource type="Script" path="res://scenes/component/figure.gd" id="1_isves"]
+[ext_resource type="Texture2D" uid="uid://cxmg2iqrf1vmh" path="res://assets/poster_2.png" id="2_1n70x"]
 [ext_resource type="Texture2D" uid="uid://cul63abde0ddi" path="res://assets/body_rest_1.png" id="2_pb2b8"]
 [ext_resource type="Texture2D" uid="uid://k212qnaajia7" path="res://assets/body_rest_2.png" id="3_aahne"]
 [ext_resource type="Texture2D" uid="uid://dc4y48ofn6fmd" path="res://assets/body_rest_3.png" id="4_ifot1"]
 [ext_resource type="Texture2D" uid="uid://3460egtfswc2" path="res://assets/logo_1.png" id="5_fm1ep"]
 [ext_resource type="Texture2D" uid="uid://ctg64oi4fp021" path="res://assets/logo_2.png" id="6_410vk"]
+[ext_resource type="Texture2D" uid="uid://b7mihpn6aapij" path="res://assets/body_donation_1.png" id="6_jybk6"]
+[ext_resource type="Texture2D" uid="uid://cog3fon10pnde" path="res://assets/body_donation_2.png" id="7_10fbj"]
 [ext_resource type="Texture2D" uid="uid://7ig4yw5a2ryv" path="res://assets/logo_3.png" id="7_bnlqb"]
+[ext_resource type="Texture2D" uid="uid://cer35qni7mntt" path="res://assets/body_donation_3.png" id="8_6s0ml"]
 [ext_resource type="Texture2D" uid="uid://c6fx3ajk8scko" path="res://assets/anger_1.png" id="8_ar1ku"]
 [ext_resource type="Texture2D" uid="uid://qin0gx6h10ej" path="res://assets/anger_2.png" id="9_61wak"]
+[ext_resource type="Texture2D" uid="uid://dulmel8eav5cd" path="res://assets/body_handling_1.png" id="9_l1k3d"]
 [ext_resource type="Texture2D" uid="uid://d1jm2k66tvwug" path="res://assets/anger_3.png" id="10_5a2wq"]
+[ext_resource type="Texture2D" uid="uid://v6jojqh2n44k" path="res://assets/body_handling_2.png" id="10_pnl1o"]
+[ext_resource type="Texture2D" uid="uid://cd53gye65lv8f" path="res://assets/body_handling_3.png" id="11_6v2dv"]
 [ext_resource type="Texture2D" uid="uid://3tuv4yff8w3d" path="res://assets/confused_1.png" id="11_tit34"]
 [ext_resource type="Texture2D" uid="uid://ehbn0q8wsoo0" path="res://assets/confused_2.png" id="12_3qi1e"]
+[ext_resource type="Texture2D" uid="uid://tktolnnoq1ti" path="res://assets/body_register_1.png" id="12_bqeib"]
 [ext_resource type="Texture2D" uid="uid://6was224qw58y" path="res://assets/confused_3.png" id="13_3ypwe"]
+[ext_resource type="Texture2D" uid="uid://qigohk4visce" path="res://assets/body_register_2.png" id="13_ail1d"]
+[ext_resource type="Texture2D" uid="uid://1v0wt2fj2ein" path="res://assets/body_register_3.png" id="14_m8j0q"]
 [ext_resource type="Texture2D" uid="uid://cotcmh2f45fmt" path="res://assets/neutral_1.png" id="14_xsdoe"]
 [ext_resource type="Texture2D" uid="uid://c4n5alcr2fypn" path="res://assets/neutral_2.png" id="15_kfqum"]
 [ext_resource type="Texture2D" uid="uid://chrwtu4ccweqy" path="res://assets/neutral_3.png" id="16_qbe2d"]
@@ -25,6 +35,10 @@
 [ext_resource type="Texture2D" uid="uid://vs5f67tv4a1r" path="res://assets/surprise_1.png" id="23_ygn7f"]
 [ext_resource type="Texture2D" uid="uid://drj63mammtia5" path="res://assets/surprise_2.png" id="24_hiqq3"]
 [ext_resource type="Texture2D" uid="uid://dw0okk338gfe2" path="res://assets/surprise_3.png" id="25_qr4n3"]
+[ext_resource type="Texture2D" uid="uid://dkhmmv02y707f" path="res://assets/donation_jar.png" id="27_8ydmu"]
+[ext_resource type="Texture2D" uid="uid://dpsb1faamojyr" path="res://assets/card_reader.png" id="28_ircbg"]
+[ext_resource type="Texture2D" uid="uid://cmyudfiwvatp2" path="res://assets/console.png" id="28_j7vh4"]
+[ext_resource type="Texture2D" uid="uid://cq1srq46qnvvn" path="res://assets/poster_1.png" id="29_36rd7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_606nt"]
 animations = [{
@@ -40,6 +54,48 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_jybk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_10fbj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6s0ml")
+}],
+"loop": true,
+"name": &"donation",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_l1k3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pnl1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6v2dv")
+}],
+"loop": true,
+"name": &"handling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_bqeib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ail1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_m8j0q")
+}],
+"loop": true,
+"name": &"register",
 "speed": 5.0
 }]
 
@@ -148,19 +204,50 @@ animations = [{
 }]
 
 [node name="Figure" type="Node2D"]
+position = Vector2(1, 0)
 script = ExtResource("1_isves")
 
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(448, 360)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_1n70x")
+
 [node name="Body" type="AnimatedSprite2D" parent="."]
-position = Vector2(483, 643)
+position = Vector2(672, 651)
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_606nt")
-frame_progress = 0.759452
+animation = &"donation"
 
 [node name="Logo" type="AnimatedSprite2D" parent="."]
-position = Vector2(496, 726)
+position = Vector2(736, 736)
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_svelr")
 frame_progress = 0.430494
 
 [node name="Face" type="AnimatedSprite2D" parent="."]
-position = Vector2(486, 242)
+position = Vector2(724, 341)
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_qsv7d")
 animation = &"confused"
+
+[node name="Midground" type="Sprite2D" parent="."]
+position = Vector2(314, 872)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("27_8ydmu")
+
+[node name="Foreground" type="Node2D" parent="."]
+
+[node name="Console" type="Sprite2D" parent="Foreground"]
+position = Vector2(974, 789)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("28_j7vh4")
+
+[node name="Special" type="Sprite2D" parent="Foreground"]
+position = Vector2(976, 720)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("29_36rd7")
+
+[node name="CardReader" type="Sprite2D" parent="Foreground"]
+position = Vector2(1112, 816)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("28_ircbg")
