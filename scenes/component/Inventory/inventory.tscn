@@ -444,6 +444,7 @@ _data = {
 }
 
 [node name="Inventory" type="Control"]
+process_mode = 3
 y_sort_enabled = true
 layout_mode = 3
 anchors_preset = 0
