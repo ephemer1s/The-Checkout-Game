@@ -1,14 +1,34 @@
-[gd_scene load_steps=6 format=3 uid="uid://dbf4jqkhmg2o6"]
+[gd_scene load_steps=7 format=3 uid="uid://dbf4jqkhmg2o6"]
 
 [ext_resource type="Script" path="res://scenes/component/text_box.gd" id="1_jcp55"]
+[ext_resource type="Theme" uid="uid://b2dqyjfm40jfq" path="res://resources/themes/tbox-normal-content.tres" id="2_mgqya"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n2ilk"]
-bg_color = Color(0.160784, 0.160784, 0.160784, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.772549, 0.772549, 0.772549, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w28iw"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Animation" id="Animation_mmkam"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("End:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_o1qbj"]
 resource_name = "triangle"
@@ -24,21 +44,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1.5, 0.8),
 "update": 1,
 "values": [false, true]
-}
-
-[sub_resource type="Animation" id="Animation_mmkam"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("End:visible")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [true]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_yl5f6"]
@@ -66,7 +71,7 @@ theme_override_constants/margin_bottom = 32
 
 [node name="Panel" type="Panel" parent="TextboxContainer"]
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_n2ilk")
+theme_override_styles/panel = SubResource("StyleBoxFlat_w28iw")
 
 [node name="MarginContainer" type="MarginContainer" parent="TextboxContainer"]
 layout_mode = 2
@@ -83,6 +88,7 @@ custom_minimum_size = Vector2(1852, 150)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
+theme = ExtResource("2_mgqya")
 theme_override_font_sizes/font_size = 32
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 "
