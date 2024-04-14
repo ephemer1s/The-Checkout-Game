@@ -1,0 +1,32 @@
+{
+  "id": 1,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "How may I serve you today?",
+      "desc_shop": "How may I serve you today?",
+      "desc_demonic": ""
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "Checkout/Pay/etc",
+        "desc": "Checkout/Pay/etc",
+        "next": 2
+      },
+      {
+        "id": 2,
+        "tooltip": "",
+        "desc": "",
+        "next": 99
+      }
+    ]
+  }
+}

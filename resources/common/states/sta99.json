@@ -1,0 +1,26 @@
+{
+  "id": 99,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "Excuse Me?",
+      "desc_shop": "Excuse me?",
+      "desc_demonic": ""
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "Repeated Offense",
+        "desc": "",
+        "next": 101
+      }
+    ]
+  }
+}

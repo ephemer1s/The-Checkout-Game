@@ -1,0 +1,50 @@
+{
+    "id": 0,
+    "type": "state",
+    "content": {
+      "animation": {
+        "face": "",
+        "body": "",
+        "logo": "",
+        "demon": "",
+        "mask": ""
+      },
+      "description": {
+        "tooltip": "Hi! Welcome to JoyMart!",
+        "desc_shop": "Hi! Welcome to JoyMart!",
+        "desc_demonic": ""
+      },
+      "option": [
+        {
+          "id": 1,
+          "tooltip": "saynothing/hello/hi/smile",
+          "desc": "Say nothing",
+          "next": 1
+        },
+        {
+          "id": 2,
+          "tooltip": "saynothing/hello/hi/smile",
+          "desc": "Hello!",
+          "next": 1
+        },
+        {
+          "id": 3,
+          "tooltip": "saynothing/hello/hi/smile",
+          "desc": "Hi!",
+          "next": 1
+        },
+        {
+          "id": 4,
+          "tooltip": "saynothing/hello/hi/smile",
+          "desc": "*smile*",
+          "next": 1
+        },
+        {
+          "id": 5,
+          "tooltip": "incorrect answer",
+          "desc": "*incorrect answer*",
+          "next": 99
+        }
+      ]
+    }
+  }
