@@ -1,0 +1,20 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://costme5i3h772"]
+
+[ext_resource type="StyleBox" uid="uid://bbs78r6ofa48v" path="res://resources/themes/btn-bg-white.tres" id="1_4jeno"]
+[ext_resource type="StyleBox" uid="uid://nuj8gxbo673b" path="res://resources/themes/btn-bg-yellow.tres" id="2_q6mk0"]
+[ext_resource type="FontFile" uid="uid://dvbojmbgqxxnr" path="res://assets/fonts/SueEllenFrancisco-Regular.ttf" id="3_7v38y"]
+
+[resource]
+default_font = ExtResource("3_7v38y")
+default_font_size = 45
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/styles/disabled = ExtResource("1_4jeno")
+Button/styles/focus = ExtResource("2_q6mk0")
+Button/styles/hover = ExtResource("2_q6mk0")
+Button/styles/normal = ExtResource("1_4jeno")
+Button/styles/pressed = ExtResource("2_q6mk0")
