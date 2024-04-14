@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://dc7cv0o73xx8s"]
+[gd_scene load_steps=7 format=3 uid="uid://dc7cv0o73xx8s"]
 
 [ext_resource type="Script" path="res://scenes/story/story.gd" id="1_0pnn7"]
 [ext_resource type="PackedScene" uid="uid://cwcaiev610pd0" path="res://scenes/component/demon.tscn" id="1_oybhc"]
 [ext_resource type="PackedScene" uid="uid://bysewa54x44ui" path="res://scenes/component/figure.tscn" id="2_1manp"]
 [ext_resource type="PackedScene" uid="uid://dbf4jqkhmg2o6" path="res://scenes/component/text_box.tscn" id="3_vgjkh"]
 [ext_resource type="PackedScene" uid="uid://dyyfmxm8nnmty" path="res://scenes/component/Inventory/inventory.tscn" id="4_rrbw8"]
+[ext_resource type="FontFile" uid="uid://dvbojmbgqxxnr" path="res://assets/fonts/SueEllenFrancisco-Regular.ttf" id="5_l7g0g"]
 
 [node name="Story" type="Node"]
 script = ExtResource("1_0pnn7")
@@ -44,6 +45,7 @@ layout_mode = 2
 custom_minimum_size = Vector2(1000, 0)
 layout_mode = 2
 size_flags_vertical = 4
+theme_override_fonts/normal_font = ExtResource("5_l7g0g")
 theme_override_font_sizes/normal_font_size = 36
 text = "THIS IS A VERY LONG TEXT FOR TESTING PURPOSES. THIS IS A VERY LONG TEXT FOR TESTING PURPOSES.  THIS IS A VERY LONG TEXT FOR TESTING PURPOSES. THIS IS A VERY LONG TEXT FOR TESTING PURPOSES.  "
 fit_content = true
