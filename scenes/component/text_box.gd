@@ -29,6 +29,7 @@ func _ready():
     queue_text("Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
     queue_text("The end.")
 
+
 func on_mouse_entered() -> void:
     hovering = true
 
@@ -52,6 +53,7 @@ func _process(delta: float) -> void:
         TextBoxState.FINISHED:
             if (hovering and Input.is_action_just_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
                 change_state(TextBoxState.READY)
+
 
 func clear_textbox() -> void:
     text_label.text = ""
