@@ -1,0 +1,90 @@
+[gd_scene load_steps=16 format=3 uid="uid://cwcaiev610pd0"]
+
+[ext_resource type="Script" path="res://scenes/component/demon.gd" id="1_xwwdn"]
+[ext_resource type="Texture2D" uid="uid://c46f8bqfitfcs" path="res://assets/demon_1.png" id="2_7w5ee"]
+[ext_resource type="Texture2D" uid="uid://bxcemp704q1bf" path="res://assets/demon_2.png" id="3_nbld7"]
+[ext_resource type="Texture2D" uid="uid://bdv82fivtp06b" path="res://assets/demon_3.png" id="4_3ycfb"]
+[ext_resource type="Texture2D" uid="uid://b624bjhnu8uc0" path="res://assets/mask_laugh_1.png" id="5_4remr"]
+[ext_resource type="Texture2D" uid="uid://b56jmlrpuvel1" path="res://assets/mask_laugh_2.png" id="6_w5slg"]
+[ext_resource type="Texture2D" uid="uid://yakaefcpa2h2" path="res://assets/mask_laugh_3.png" id="7_kjo10"]
+[ext_resource type="Texture2D" uid="uid://b0kb63yshsqep" path="res://assets/mask_neutral_1.png" id="8_en307"]
+[ext_resource type="Texture2D" uid="uid://dcr4gi7cqytnb" path="res://assets/mask_neutral_2.png" id="9_af4g3"]
+[ext_resource type="Texture2D" uid="uid://d005uaemqplee" path="res://assets/mask_neutral_3.png" id="10_msmxh"]
+[ext_resource type="Texture2D" uid="uid://b3cdpy1061mhn" path="res://assets/mask_shock_1.png" id="11_j532m"]
+[ext_resource type="Texture2D" uid="uid://c3lttnrtc216q" path="res://assets/mask_shock_2.png" id="12_mau7q"]
+[ext_resource type="Texture2D" uid="uid://d060siwey5rf4" path="res://assets/mask_shock_3.png" id="13_le4gu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_606nt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_7w5ee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nbld7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3ycfb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_svelr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_4remr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_w5slg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_kjo10")
+}],
+"loop": true,
+"name": &"laugh",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_en307")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_af4g3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_msmxh")
+}],
+"loop": true,
+"name": &"neutral",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_j532m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mau7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_le4gu")
+}],
+"loop": true,
+"name": &"shock",
+"speed": 5.0
+}]
+
+[node name="Demon" type="Node"]
+script = ExtResource("1_xwwdn")
+
+[node name="Body" type="AnimatedSprite2D" parent="."]
+position = Vector2(1494, 362)
+sprite_frames = SubResource("SpriteFrames_606nt")
+frame_progress = 0.613498
+
+[node name="Logo" type="AnimatedSprite2D" parent="."]
+position = Vector2(1500, 585)
+sprite_frames = SubResource("SpriteFrames_svelr")
+animation = &"shock"

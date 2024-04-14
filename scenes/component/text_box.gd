@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Node
 
 const TEXT_READ_RATE: float = 0.02
 var current_state: TextBoxState = TextBoxState.READY

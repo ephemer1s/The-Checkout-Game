@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://dbf4jqkhmg2o6"]
 
-[ext_resource type="Script" path="res://scenes/component/TextBox.gd" id="1_jcp55"]
+[ext_resource type="Script" path="res://scenes/component/text_box.gd" id="1_jcp55"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n2ilk"]
 bg_color = Color(0.160784, 0.160784, 0.160784, 1)
@@ -47,7 +47,7 @@ _data = {
 "triangle": SubResource("Animation_o1qbj")
 }
 
-[node name="TextBox" type="CanvasLayer"]
+[node name="TextBox" type="Node"]
 script = ExtResource("1_jcp55")
 
 [node name="TextboxContainer" type="MarginContainer" parent="."]
@@ -55,7 +55,7 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -321.0
+offset_top = -246.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_vertical = 8
@@ -79,7 +79,7 @@ theme_override_constants/margin_bottom = 16
 layout_mode = 2
 
 [node name="Text" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
-custom_minimum_size = Vector2(1852, 225)
+custom_minimum_size = Vector2(1852, 150)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
@@ -87,7 +87,8 @@ theme_override_font_sizes/font_size = 32
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 "
 autowrap_mode = 3
-visible_ratio = -0.00224215
+visible_characters = 0
+visible_ratio = 0.0
 
 [node name="End" type="Label" parent="TextboxContainer/MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(28, 45)

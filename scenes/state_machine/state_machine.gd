@@ -26,17 +26,6 @@ func _physics_process(delta: float) -> void:
     print(cur_state)
     cur_state.physics_update(delta)
 
-func transition_to_previous_state() -> void:
-    if prev_state == null:
-        GodotLogger.debug("Trying to revert to a null state!")
-        return
-
-    cur_state.exit()
-    cur_state = prev_state
-
-    cur_state.enter()
-    prev_state = null
-
 func transition_to(target_state_name: String) -> void:
     if not has_node(target_state_name):
         return

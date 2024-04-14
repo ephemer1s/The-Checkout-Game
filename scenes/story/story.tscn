@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://dc7cv0o73xx8s"]
+
+[ext_resource type="PackedScene" uid="uid://cwcaiev610pd0" path="res://scenes/component/demon.tscn" id="1_oybhc"]
+[ext_resource type="PackedScene" uid="uid://bysewa54x44ui" path="res://scenes/component/figure.tscn" id="2_1manp"]
+[ext_resource type="PackedScene" uid="uid://dbf4jqkhmg2o6" path="res://scenes/component/text_box.tscn" id="3_vgjkh"]
+
+[node name="Story" type="Node"]
+
+[node name="Demon" parent="." instance=ExtResource("1_oybhc")]
+
+[node name="Figure" parent="." instance=ExtResource("2_1manp")]
+
+[node name="TextBox" parent="." instance=ExtResource("3_vgjkh")]
