@@ -1,13 +1,22 @@
-[gd_scene load_steps=4 format=3 uid="uid://dc7cv0o73xx8s"]
+[gd_scene load_steps=5 format=3 uid="uid://dc7cv0o73xx8s"]
 
 [ext_resource type="PackedScene" uid="uid://cwcaiev610pd0" path="res://scenes/component/demon.tscn" id="1_oybhc"]
 [ext_resource type="PackedScene" uid="uid://bysewa54x44ui" path="res://scenes/component/figure.tscn" id="2_1manp"]
 [ext_resource type="PackedScene" uid="uid://dbf4jqkhmg2o6" path="res://scenes/component/text_box.tscn" id="3_vgjkh"]
+[ext_resource type="PackedScene" uid="uid://dyyfmxm8nnmty" path="res://scenes/component/Inventory/inventory.tscn" id="4_rrbw8"]
 
 [node name="Story" type="Node"]
 
 [node name="Demon" parent="." instance=ExtResource("1_oybhc")]
+position = Vector2(-19, -11)
 
 [node name="Figure" parent="." instance=ExtResource("2_1manp")]
+position = Vector2(212, -2)
 
 [node name="TextBox" parent="." instance=ExtResource("3_vgjkh")]
+
+[node name="Inventory" parent="." instance=ExtResource("4_rrbw8")]
+offset_left = 197.0
+offset_top = 913.0
+offset_right = 197.0
+offset_bottom = 913.0

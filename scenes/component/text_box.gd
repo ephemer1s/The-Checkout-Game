@@ -67,9 +67,11 @@ func display_text() -> void:
 	cur_tween.tween_callback(on_tween_completed)
 
 func on_tween_completed():
-	change_state(TextBoxState.FINISHED)
-	if !text_queue.is_empty():
-		end_animation.play("triangle")
+    change_state(TextBoxState.FINISHED)
+    print("here")
+    if !text_queue.is_empty():
+        print("1")
+        end_animation.play("triangle")
 
 func change_state(next_state: TextBoxState) -> void:
 	current_state = next_state
