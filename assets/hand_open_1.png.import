@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://burrmgr6vuk6o"
-path="res://.godot/imported/inv_card.png-0a9bd65bb0def29993a80e9952f7699c.ctex"
+uid="uid://dtrgcjpu85vaq"
+path="res://.godot/imported/hand_open_1.png-de11d652f0b23c9f0e5950d76b493047.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/inv_card.png"
-dest_files=["res://.godot/imported/inv_card.png-0a9bd65bb0def29993a80e9952f7699c.ctex"]
+source_file="res://assets/hand_open_1.png"
+dest_files=["res://.godot/imported/hand_open_1.png-de11d652f0b23c9f0e5950d76b493047.ctex"]
 
 [params]
 

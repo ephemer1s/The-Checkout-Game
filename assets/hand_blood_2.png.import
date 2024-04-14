@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://burrmgr6vuk6o"
-path="res://.godot/imported/inv_card.png-0a9bd65bb0def29993a80e9952f7699c.ctex"
+uid="uid://xxlx5svoqetu"
+path="res://.godot/imported/hand_blood_2.png-fbda8cebd5f7bd6fc3ab39d25d038fc4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/inv_card.png"
-dest_files=["res://.godot/imported/inv_card.png-0a9bd65bb0def29993a80e9952f7699c.ctex"]
+source_file="res://assets/hand_blood_2.png"
+dest_files=["res://.godot/imported/hand_blood_2.png-fbda8cebd5f7bd6fc3ab39d25d038fc4.ctex"]
 
 [params]
 

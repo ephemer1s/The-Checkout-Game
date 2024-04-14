@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://burrmgr6vuk6o"
-path="res://.godot/imported/inv_card.png-0a9bd65bb0def29993a80e9952f7699c.ctex"
+uid="uid://cjil367oatlna"
+path="res://.godot/imported/hand_contract_3.png-9f356edb6690726d0be8aec6aec393c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/inv_card.png"
-dest_files=["res://.godot/imported/inv_card.png-0a9bd65bb0def29993a80e9952f7699c.ctex"]
+source_file="res://assets/hand_contract_3.png"
+dest_files=["res://.godot/imported/hand_contract_3.png-9f356edb6690726d0be8aec6aec393c4.ctex"]
 
 [params]
 
