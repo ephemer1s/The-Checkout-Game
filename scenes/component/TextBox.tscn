@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://dbf4jqkhmg2o6"]
+[gd_scene load_steps=6 format=3 uid="uid://dbf4jqkhmg2o6"]
 
 [ext_resource type="Script" path="res://scenes/component/TextBox.gd" id="1_jcp55"]
 
@@ -9,6 +9,43 @@ border_width_top = 2
 border_width_right = 2
 border_width_bottom = 2
 border_color = Color(0.772549, 0.772549, 0.772549, 1)
+
+[sub_resource type="Animation" id="Animation_o1qbj"]
+resource_name = "triangle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("End:visible")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1.5, 0.8),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_mmkam"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("End:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yl5f6"]
+_data = {
+"RESET": SubResource("Animation_mmkam"),
+"triangle": SubResource("Animation_o1qbj")
+}
 
 [node name="TextBox" type="CanvasLayer"]
 script = ExtResource("1_jcp55")
@@ -59,3 +96,8 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 theme_override_font_sizes/font_size = 32
 text = "▼"
+
+[node name="EndAnimation" type="AnimationPlayer" parent="TextboxContainer/MarginContainer/HBoxContainer"]
+libraries = {
+"": SubResource("AnimationLibrary_yl5f6")
+}

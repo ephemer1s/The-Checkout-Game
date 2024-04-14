@@ -18,3 +18,12 @@ func physics_update(delta: float) -> void:
 
 func handle_input(event: InputEvent) -> void:
     pass
+
+func get_illegible_text() -> String:
+    return ""
+
+func get_shop_text() -> String:
+    return ""
+
+func get_demonic_text() -> String:
+    return ""
