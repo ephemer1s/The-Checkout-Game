@@ -163,5 +163,4 @@ frame_progress = 0.430494
 [node name="Face" type="AnimatedSprite2D" parent="."]
 position = Vector2(486, 242)
 sprite_frames = SubResource("SpriteFrames_qsv7d")
-animation = &"smile"
-frame_progress = 0.367631
+animation = &"confused"
