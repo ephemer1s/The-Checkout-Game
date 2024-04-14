@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://ciyxe0a1tbnv8"
-path="res://.godot/imported/Demon-Regular.ttf-98602764e5dd26ef2fa81661800ebe23.fontdata"
+uid="uid://dvbojmbgqxxnr"
+path="res://.godot/imported/SueEllenFrancisco-Regular.ttf-0c35896829e54930172cad608e70e318.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/Demon-Regular.ttf"
-dest_files=["res://.godot/imported/Demon-Regular.ttf-98602764e5dd26ef2fa81661800ebe23.fontdata"]
+source_file="res://assets/fonts/SueEllenFrancisco-Regular.ttf"
+dest_files=["res://.godot/imported/SueEllenFrancisco-Regular.ttf-0c35896829e54930172cad608e70e318.fontdata"]
 
 [params]
 
