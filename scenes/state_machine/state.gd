@@ -46,9 +46,8 @@ func enter(_state_id: int, _state_machine: StateMachine, _parser: JSONParser) ->
         state_machine.owner.animation_player.play("fade_out")
         await state_machine.owner.animation_player.animation_finished
 
+        state_machine.owner.end_screen.visible = true
         state_machine.owner.end_screen.play_end(ending_name)
-        #state_machine.owner.text_box.queue_text("Obtained ending:" + ending_name)
-        #state_machine.owner.text_box.ready_text_box()
 
 func exit() -> void:
     if is_instance_valid(self):

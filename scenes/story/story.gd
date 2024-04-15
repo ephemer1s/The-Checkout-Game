@@ -17,6 +17,7 @@ func _ready() -> void:
     inventory.connect("inventory_opened", on_inventory_opened)
     inventory.connect("inventory_closed", on_inventory_closed)
     inventory.connect("description_to_display", on_description_changed)
+    end_screen.visible = false
 
     state_machine.init(parser)
 

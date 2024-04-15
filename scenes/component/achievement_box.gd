@@ -41,7 +41,7 @@ func set_achievement(ending: String) -> void:
         icon.texture = soulless_icon
     elif ending == "depleted":
         title.text = "ENDING # 5 - THE DEPLETED"
-        description.text = "I am Jack's lack of meticulousness."
+        description.text = "I am Jack's lack of blood."
         icon.texture = depleted_icon
     elif ending == "summoning":
         title.text = "ENDING # 1 - THE SUMMONING"

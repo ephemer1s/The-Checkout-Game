@@ -26,12 +26,6 @@ Button/styles/pressed = ExtResource("2_g7jku")
 shader = ExtResource("5_4w86c")
 
 [sub_resource type="Theme" id="Theme_qxi3e"]
-Button/colors/font_color = Color(0, 0, 0, 1)
-Button/colors/font_disabled_color = Color(0, 0, 0, 1)
-Button/colors/font_focus_color = Color(0, 0, 0, 1)
-Button/colors/font_hover_color = Color(0, 0, 0, 1)
-Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-Button/colors/font_pressed_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Animation" id="Animation_xxgvi"]
 resource_name = "on_click"

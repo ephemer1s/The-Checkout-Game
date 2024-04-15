@@ -156,6 +156,14 @@ animations = [{
 "texture": ExtResource("13_e3irf")
 }],
 "loop": true,
+"name": &"ignorant",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_e3irf")
+}],
+"loop": true,
 "name": &"mindless",
 "speed": 5.0
 }, {
@@ -355,9 +363,7 @@ script = ExtResource("1_xylv3")
 [node name="End" type="AnimatedSprite2D" parent="."]
 position = Vector2(745, 734)
 sprite_frames = SubResource("SpriteFrames_4tpnf")
-animation = &"bodiless"
-frame = 15
-frame_progress = 1.0
+animation = &"ignorant"
 
 [node name="TrueEnd" type="AnimatedSprite2D" parent="."]
 visible = false
