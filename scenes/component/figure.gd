@@ -24,7 +24,10 @@ func _process(delta: float) -> void:
     pass
 
 func update_cost_label(new_cost: float) -> void:
-    cost_label.text = str(new_cost)
+    var cost_str = str(new_cost)
+    if new_cost == int(new_cost):
+        cost_str += ".00"
+    cost_label.text = cost_str
 
 func play_body_animation(animation_name: String) -> void:
     body_animation.play(animation_name)
