@@ -39,7 +39,6 @@ func _ready():
 
 
 func on_mouse_entered() -> void:
-    print("here???")
     hovering = true
 
 func on_mouse_exited() -> void:
@@ -53,14 +52,14 @@ func _process(delta: float) -> void:
                 display_text()
         TextBoxState.READING:
             end_animation.stop()
-            if (hovering and Input.is_action_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
+            if (hovering and Input.is_action_just_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
                 text_label.visible_ratio = 1.0
                 if cur_tween:
                     cur_tween.kill()
                 change_state(TextBoxState.FINISHED)
                 on_tween_completed()
         TextBoxState.FINISHED:
-            if (hovering and Input.is_action_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
+            if (hovering and Input.is_action_just_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
                 change_state(TextBoxState.READY)
 
 
