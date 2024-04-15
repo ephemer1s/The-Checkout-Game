@@ -64,7 +64,7 @@ text = "Helium Games Studio"
 layout_mode = 2
 theme = ExtResource("4_gj1ql")
 theme_override_font_sizes/font_size = 40
-text = "heliumgamesstudio@gmail.com"
+text = "https://twitter.com/HeliumGS"
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
