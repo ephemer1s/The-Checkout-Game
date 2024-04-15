@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cbw1o13gvy8e0"
+path="res://.godot/imported/Cool_D .mp3-b65f2a211316aa7dfc53007c8a554828.mp3str"
+
+[deps]
+
+source_file="res://assets/sfx/Cool_D .mp3"
+dest_files=["res://.godot/imported/Cool_D .mp3-b65f2a211316aa7dfc53007c8a554828.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
