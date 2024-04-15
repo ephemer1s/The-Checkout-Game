@@ -1,9 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://82ohi1st87i"]
+[gd_scene load_steps=5 format=3 uid="uid://82ohi1st87i"]
 
 [ext_resource type="Script" path="res://scenes/main/options.gd" id="1_01me5"]
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_aa2kl"]
-specular_color = Color(0, 0, 0, 1)
+[ext_resource type="Theme" uid="uid://b2dqyjfm40jfq" path="res://resources/themes/tbox-normal-content.tres" id="2_f4sog"]
+[ext_resource type="FontFile" uid="uid://dvbojmbgqxxnr" path="res://assets/fonts/SueEllenFrancisco-Regular.ttf" id="3_16o2c"]
+[ext_resource type="FontFile" uid="uid://ciyxe0a1tbnv8" path="res://assets/fonts/Demon-Regular.ttf" id="4_rjim7"]
 
 [node name="Options" type="Control"]
 layout_mode = 3
@@ -14,20 +14,27 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_01me5")
 
-[node name="PlaceholderBackground" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
-texture = SubResource("CanvasTexture_aa2kl")
+[node name="BackgroundWhite" type="ColorRect" parent="."]
+offset_left = -1000.0
+offset_top = -500.0
+offset_right = 3000.0
+offset_bottom = 1500.0
 
 [node name="PlaceHolderText" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 386.0
-offset_top = 127.0
-offset_right = 744.0
-offset_bottom = 242.0
+offset_left = 64.0
+offset_top = 112.0
+offset_right = 1096.0
+offset_bottom = 528.0
+theme = ExtResource("2_f4sog")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER "
+theme_override_fonts/normal_font = ExtResource("3_16o2c")
+theme_override_fonts/bold_font = ExtResource("4_rjim7")
+theme_override_fonts/italics_font = ExtResource("3_16o2c")
+theme_override_fonts/bold_italics_font = ExtResource("4_rjim7")
+bbcode_enabled = true
+text = "[shake rate=25 level=10]Lorem ipsum dolor sit amet, consectetur adipiscing elit, [color=#FFC700][b]sed do eiusmod tempor incididunt ut labore et dolore magna aliqua[/b][/color]. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[/shake]
+"
 
 [node name="BtnBack" type="Button" parent="."]
 layout_mode = 0

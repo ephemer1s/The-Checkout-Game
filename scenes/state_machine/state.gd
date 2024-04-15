@@ -39,6 +39,9 @@ func get_demonic_text() -> String:
     return parser.itemData["content"]["description"]["desc_demonic"]
 
 func get_illegible_text() -> Array[String]:
+    '''
+    this function only extract string in brackets in this state's desc, to an array.
+    '''
     var shop_text = get_shop_text()
     var demonic_text = get_demonic_text()
     
@@ -53,6 +56,23 @@ func get_illegible_text() -> Array[String]:
         print(shop_mosaic, demonic_mosaic)
         
     return [shop_mosaic, demonic_mosaic]
+
+
+func get_richtext_textstr(text, theme="shop") -> String:
+    '''
+    This function generates richtext label from description texts to display them on textbox.
+    '''
+    var richtxt = "[shake rate=25 level=5]"
+    for ch in text:
+        if ch == "[":
+            richtxt += "[b][color=#FFC700]"
+        elif ch == "]":
+            richtxt += "[/color][/b]"
+        else:
+            richtxt += ch
+    richtxt += "[/shake]"
+    return richtxt
+    
     
 func get_animation_type_dict() -> String:
     return parser.itemData["content"]["animation"]
@@ -63,3 +83,5 @@ func get_animation_type_dict() -> String:
 
 func get_options() -> Array:
     return parser.itemData["content"]["option"]  # option: id:int, tooltip:str, desc:str, next:int
+
+

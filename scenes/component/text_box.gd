@@ -23,11 +23,18 @@ func queue_text(next_text):
 func _ready():
     margin_container.connect("mouse_entered", on_mouse_entered)
     margin_container.connect("mouse_exited", on_mouse_exited)
-    queue_text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
-    queue_text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ")
-    queue_text("Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ")
-    queue_text("Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-    queue_text("The end.")
+    
+    if OS.is_debug_build():
+        # test usage
+        var txt = "Lorem [ipsum] dolor sit amet, consectetur [adipiscing elit, sed do] eiusmod tempor incididunt ut [labore et dolore magna] aliqua."
+        var s = State.new()
+        queue_text(s.get_richtext_textstr(txt))
+        
+        queue_text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+        queue_text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ")
+        queue_text("Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ")
+        queue_text("Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+        queue_text("The end.")
 
 
 func on_mouse_entered() -> void:

@@ -9,3 +9,12 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
     pass
+
+
+func _on_place_holder_text_focus_entered():
+    pass # Replace with function body.
+
+
+func _on_btn_back_pressed():
+    get_tree().change_scene_to_file("res://scenes/main/main-menu.tscn")
+    pass # Replace with function body.
