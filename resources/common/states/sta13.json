@@ -1,0 +1,26 @@
+{
+  "id": 13,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "Sorry, seems like that [number] isn't in our system.",
+      "desc_shop": "Sorry, seems like that [number] isn't in our system.",
+      "desc_demonic": "Sorry, seems like that [name] isn't in our system."
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "Say nothing",
+        "desc": "Say nothing",
+        "next": 11
+      }
+    ]
+  }
+}

@@ -26,7 +26,8 @@ func _ready():
     
     if OS.is_debug_build():
         # test usage
-        var txt = "Lorem [ipsum] dolor sit amet, consectetur [adipiscing elit, sed do] eiusmod tempor incididunt ut [labore et dolore magna] aliqua."
+        var txt = "[Good]. Let's see... [your selection requires] one pound of [human] kidney, half a pound of [human] heart and two pounds of [human] liver. "
+
         var s = State.new()
         queue_text(s.get_richtext_textstr(txt))
         

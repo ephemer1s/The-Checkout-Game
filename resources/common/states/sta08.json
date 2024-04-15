@@ -1,0 +1,26 @@
+{
+  "id": 8,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "Thank you sir! After applying our promotions, your new [total is $30.00]. (register value updated)",
+      "desc_shop": "Thank you sir! After applying our promotions, your new [total is $30.00]. (register value updated)",
+      "desc_demonic": "Thank you sir! Your new [total is kidney/heart/tongue/blood]. (register value updated)"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "say nothing",
+        "desc": "",
+        "next": 9
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": 17,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "[OK]. [Swipe your credit card] when ready. (cashier pushes machine forward)",
+      "desc_shop": "[OK]. [Swipe your credit card] when ready. (cashier pushes machine forward)",
+      "desc_demonic": "[OK]. [Step into the machine] when ready. (cashier points to soul-sucking machine)"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "swipe card",
+        "desc": "*swipe card*",
+        "next": 19
+      }
+    ]
+  }
+}

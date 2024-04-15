@@ -1,0 +1,38 @@
+{
+  "id": 2,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "OK! Did you find what you're looking for?",
+      "desc_shop": "OK! Did you find what you're looking for?",
+      "desc_demonic": "Greetings! Did you find what you're looking for?"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "yes",
+        "desc": "",
+        "next": 3
+      },
+      {
+        "id": 2,
+        "tooltip": "no",
+        "desc": "",
+        "next": 4
+      },
+      {
+        "id": 3,
+        "tooltip": "other world starts here",
+        "desc": "",
+        "next": 99
+      }
+    ]
+  }
+}

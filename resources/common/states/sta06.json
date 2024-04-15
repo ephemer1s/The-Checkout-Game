@@ -1,0 +1,26 @@
+{
+  "id": 6,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "Oh you have some personal stuff in your bag, here you go (open inventory menu)",
+      "desc_shop": "Oh you have some personal stuff in your bag, here you go (open inventory menu)",
+      "desc_demonic": ""
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "say nothing",
+        "desc": "",
+        "next": 1
+      }
+    ]
+  }
+}

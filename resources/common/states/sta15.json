@@ -1,0 +1,32 @@
+{
+  "id": 15,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "OK that's fine. How would you like to pay today?",
+      "desc_shop": "OK that's fine. How would you like to pay today?",
+      "desc_demonic": "OK that's fine. How would you like to pay today?"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "*[cash/flesh]*",
+        "desc": "",
+        "next": 16
+      },
+      {
+        "id": 2,
+        "tooltip": "*[card/soul]*",
+        "desc": "",
+        "next": 17
+      }
+    ]
+  }
+}

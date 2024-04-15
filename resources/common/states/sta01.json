@@ -17,13 +17,13 @@
     "option": [
       {
         "id": 1,
-        "tooltip": "Checkout/Pay/etc",
-        "desc": "Checkout/Pay/etc",
-        "next": 2
+        "tooltip": "anything normal",
+        "desc": "",
+        "next": 98
       },
       {
         "id": 2,
-        "tooltip": "",
+        "tooltip": "mosaic sorcery",
         "desc": "",
         "next": 99
       }

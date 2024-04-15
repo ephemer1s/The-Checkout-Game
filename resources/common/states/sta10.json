@@ -1,0 +1,32 @@
+{
+  "id": 10,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "Cool. Can I please see your [card] or have the [number] on file please?  (poster indicates only phone number is required during checkout)",
+      "desc_shop": "Cool. Can I please see your [card] or have the [number] on file please?  (poster indicates only phone number is required during checkout)",
+      "desc_demonic": "Cool. Can I please see your [contract] have the [name] on file please?  (poster indicates only the name is required during checkout)"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "phone number/name/showcard",
+        "desc": "",
+        "next": 12
+      },
+      {
+        "id": 2,
+        "tooltip": "anything else",
+        "desc": "",
+        "next": 13
+      }
+    ]
+  }
+}

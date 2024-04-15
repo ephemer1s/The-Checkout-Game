@@ -1,0 +1,26 @@
+{
+  "id": 5,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "I see that you have brought your own bag.  So there's no need to purchase that. (grocery bag)",
+      "desc_shop": "I see that you have brought your own bag.  So there's no need to purchase that. (grocery bag)",
+      "desc_demonic": "I see that you have brought your own bag. So there's no need to purchase that. (body bag)"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "say nothing",
+        "desc": "",
+        "next": 6
+      }
+    ]
+  }
+}

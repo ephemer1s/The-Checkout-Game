@@ -11,8 +11,10 @@ func get_file_path(state_id: int)-> String:
     var filepath = ""
     if state_id > 100:
          filepath = "res://resources/common/endings/end" + str(state_id) + ".json"
+    elif state_id < 10:
+         filepath = "res://resources/common/states/sta0" + str(state_id) + ".json"
     else:
-         filepath = "res://resources/common/endings/end" + str(state_id) + ".json"
+         filepath = "res://resources/common/states/sta" + str(state_id) + ".json"
     data_file_path = filepath
     return filepath # does not guarantee the legitimacy (existence) of filepath.
 

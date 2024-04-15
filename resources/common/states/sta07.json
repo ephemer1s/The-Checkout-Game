@@ -1,0 +1,38 @@
+{
+  "id": 7,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "Would you like to [make a donation] along with your [purchase] today? That'd make you eligible for [the promotion we are running now]! (the word 'donation' is on the jar while cashier asks the question, but it is blurred)",
+      "desc_shop": "Would you like to [make a donation] along with your [purchase] today? That'd make you eligible for [the promotion we are running now]! (the word 'donation' is on the jar while cashier asks the question, but it is blurred)",
+      "desc_demonic": "Would you like to [add some of your own blood] along with your [deal] today? That'd make you eligible for [a stronger bond with the demon]!"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "yes (correct answer $3.43)",
+        "desc": "",
+        "next": 8
+      },
+      {
+        "id": 2,
+        "tooltip": "no",
+        "desc": "",
+        "next": 9
+      },
+      {
+        "id": 2,
+        "tooltip": "dotaned too much blood",
+        "desc": "",
+        "next": 106
+      }
+    ]
+  }
+}

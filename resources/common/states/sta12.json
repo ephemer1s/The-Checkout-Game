@@ -1,0 +1,26 @@
+{
+  "id": 12,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "[Ah there you are]. You're now given [a 10% discount for today]'s [purchase]!  (\"discount\" blurred, but also apparent on poster) (register number updated)",
+      "desc_shop": "[Ah there you are]. You're now given [a 10% discount for today]'s [purchase]!  (\"discount\" blurred, but also apparent on poster) (register number updated)",
+      "desc_demonic": "[Ah there it is]. You're now given [the permission to use ABC]'s [flesh]!"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "null",
+        "desc": "",
+        "next": 15
+      }
+    ]
+  }
+}

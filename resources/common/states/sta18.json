@@ -1,0 +1,32 @@
+{
+  "id": 18,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "[Great]! [Thank you for shopping at ABC]. [have a terrific day]!",
+      "desc_shop": "[Great]! [Thank you for shopping at ABC]. [have a terrific day]!",
+      "desc_demonic": "[Great]! [Thank you for shopping at ABC]. [have a terrific day]!"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "used own flesh",
+        "desc": "",
+        "next": 103
+      },
+      {
+        "id": 2,
+        "tooltip": "used friends flesh",
+        "desc": "",
+        "next": 105
+      }
+    ]
+  }
+}

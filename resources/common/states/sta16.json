@@ -1,0 +1,32 @@
+{
+  "id": 16,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "",
+      "body": "",
+      "logo": "",
+      "demon": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "So that's [30.6 dollars]... and here's the [change]. We're good. (place coins on counter)",
+      "desc_shop": "So that's [30.6 dollars]... and here's the [change]. We're good. (place coins on counter)",
+      "desc_demonic": "So that's [the flesh]... and here's the [blood]. We're good. (takes all body parts away)"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "null",
+        "desc": "",
+        "next": 18
+      },
+      {
+        "id": 2,
+        "tooltip": "not enough",
+        "desc": "",
+        "next": 15
+      }
+    ]
+  }
+}

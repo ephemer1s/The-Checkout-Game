@@ -17,6 +17,12 @@
     "option": [
       {
         "id": 1,
+        "tooltip": "null",
+        "desc": "",
+        "next": 2
+      },
+      {
+        "id": 2,
         "tooltip": "Repeated Offense",
         "desc": "",
         "next": 101
