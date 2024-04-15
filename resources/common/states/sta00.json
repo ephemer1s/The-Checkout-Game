@@ -3,9 +3,9 @@
     "type": "state",
     "content": {
       "animation": {
-        "face": "",
-        "body": "",
-        "logo": "",
+        "face": "smile",
+        "body": "default",
+        "logo": "default",
         "demon": "",
         "hand": "",
         "mask": ""

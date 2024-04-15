@@ -7,21 +7,28 @@ var state_machine: StateMachine
 var parser: JSONParser
 # parser.itemData()
 
-func enter() -> void:
-    parser = JSONParser.new()
+
+func enter(_state_id: int, _state_machine: StateMachine, _parser: JSONParser) -> void:
+    state_id = _state_id
+    state_machine = _state_machine
+    parser = _parser
+
     parser.parse(state_id)
     var animation = parser.itemData["content"]["animation"]
 
-    state_machine.owner.face_animation_player.play(animation["face"])
-    state_machine.owner.body_animation_player.play(animation["body"])
-    state_machine.owner.logo_animation_player.play(animation["logo"])
-    state_machine.owner.demon_animation_player.play(animation["demon"])
-    state_machine.owner.demon_mask_animation_player.play(animation["mask"])
-    # TODO: uncomment to enable this:
-    #state_machine.owner.demon_hand_animation_player.play(animation["hand"])
+    print(state_machine)
+    print(state_machine.owner)
+    state_machine.owner.figure.play_face_animation(animation["face"])
+    state_machine.owner.figure.play_body_animation(animation["body"])
+    state_machine.owner.figure.play_logo_animation(animation["logo"])
+    state_machine.owner.demon.play_mask_animation(animation["mask"])
+    state_machine.owner.demon.play_body_animation(animation["demon"])
+
+    state_machine.owner.text_box.queue_text(get_richtext_textstr(get_shop_text()))
 
 func exit() -> void:
-    pass
+    if is_instance_valid(self):
+        queue_free()
 
 func update(delta: float) -> void:
     pass
@@ -31,8 +38,6 @@ func physics_update(delta: float) -> void:
 
 func handle_input(event: InputEvent) -> void:
     pass
-
-
 
 func get_shop_text() -> String:
     return parser.itemData["content"]["description"]["desc_shop"]

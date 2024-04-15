@@ -14,9 +14,6 @@ func _ready() -> void:
     body_animation.visible = false
     logo_animation.visible = false
     hand_animation.visible = false
-    appear()
-    await get_tree().create_timer(5).timeout
-    play_heart_and_choice_animation()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

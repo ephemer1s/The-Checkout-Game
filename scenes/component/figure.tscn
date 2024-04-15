@@ -215,8 +215,6 @@ texture = ExtResource("2_1n70x")
 position = Vector2(672, 651)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_606nt")
-animation = &"donation"
-frame_progress = 0.202592
 
 [node name="Logo" type="AnimatedSprite2D" parent="."]
 position = Vector2(736, 736)
