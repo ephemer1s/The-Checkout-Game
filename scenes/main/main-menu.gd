@@ -9,6 +9,7 @@ extends Control
 var game: PackedScene = preload("res://scenes/story/story.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
+    Audio.play_bgm("shop")
     #$VBoxContainer/BtnNewGame.grab_focus()
     #Audio.stream = load("res://assets/sfx/shop_bgm.mp3")
     #Audio.play()

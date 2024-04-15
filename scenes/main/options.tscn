@@ -82,4 +82,5 @@ layout_mode = 2
 theme = ExtResource("2_1p8wg")
 value = 100.0
 
+[connection signal="mouse_entered" from="BtnBack" to="." method="_on_btn_back_mouse_entered"]
 [connection signal="pressed" from="BtnBack" to="." method="_on_btn_back_pressed"]

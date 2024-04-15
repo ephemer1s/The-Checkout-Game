@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://byv1bqy52k6bx"]
+[gd_scene load_steps=5 format=3 uid="uid://byv1bqy52k6bx"]
 
 [ext_resource type="Script" path="res://scenes/main/credits.gd" id="1_mr0wr"]
+[ext_resource type="Theme" uid="uid://costme5i3h772" path="res://resources/themes/btn-mainmenu.tres" id="2_x57u7"]
+[ext_resource type="Theme" uid="uid://cmsoegrpc20f2" path="res://resources/themes/title-mainmenu.tres" id="3_ecepq"]
+[ext_resource type="Theme" uid="uid://b2dqyjfm40jfq" path="res://resources/themes/tbox-normal-content.tres" id="4_gj1ql"]
 
 [node name="Credits" type="Control"]
 layout_mode = 3
@@ -18,22 +21,121 @@ offset_top = -500.0
 offset_right = 3000.0
 offset_bottom = 1500.0
 
-[node name="PlaceHolderText" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 386.0
-offset_top = 127.0
-offset_right = 744.0
-offset_bottom = 242.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-text = "PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER "
-
 [node name="BtnBack" type="Button" parent="."]
-layout_mode = 0
-offset_left = 552.0
-offset_top = 568.0
-offset_right = 602.0
-offset_bottom = 599.0
-text = "BACK"
+offset_left = 1584.0
+offset_top = 184.0
+offset_right = 1904.0
+offset_bottom = 272.0
+theme = ExtResource("2_x57u7")
+text = "    BACK"
+alignment = 0
 
-[connection signal="focus_entered" from="PlaceHolderText" to="." method="_on_place_holder_text_focus_entered"]
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_left = 200.0
+offset_top = 100.0
+offset_right = 565.0
+offset_bottom = 351.0
+
+[node name="Title" type="Label" parent="MarginContainer"]
+layout_mode = 2
+theme = ExtResource("3_ecepq")
+theme_override_font_sizes/font_size = 128
+text = "CREDITS"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 200.0
+offset_top = 424.0
+offset_right = 439.0
+offset_bottom = 946.0
+theme_override_constants/separation = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = -20
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("4_gj1ql")
+theme_override_font_sizes/font_size = 48
+text = "Helium Games Studio"
+
+[node name="Label2" type="Label" parent="VBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("4_gj1ql")
+theme_override_font_sizes/font_size = 40
+text = "heliumgamesstudio@gmail.com"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = -20
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("4_gj1ql")
+theme_override_font_sizes/font_size = 48
+text = "PROGRAM: Mizuto"
+
+[node name="Label2" type="Label" parent="VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("4_gj1ql")
+theme_override_font_sizes/font_size = 40
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = -20
+
+[node name="Label" type="Label" parent="VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+theme = ExtResource("4_gj1ql")
+theme_override_font_sizes/font_size = 48
+text = "ART: Ranger Wang"
+
+[node name="Label2" type="Label" parent="VBoxContainer/VBoxContainer3"]
+layout_mode = 2
+theme = ExtResource("4_gj1ql")
+theme_override_font_sizes/font_size = 40
+text = "https://twitter.com/ranger_wang"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 1040.0
+offset_top = 616.0
+offset_right = 1356.0
+offset_bottom = 962.0
+theme_override_constants/separation = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = -20
+
+[node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("4_gj1ql")
+theme_override_font_sizes/font_size = 48
+text = "PROGRAM: Tsukimi Spica"
+
+[node name="Label2" type="Label" parent="VBoxContainer2/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("4_gj1ql")
+theme_override_font_sizes/font_size = 40
+text = "https://twitter.com/ephemer1s"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_constants/separation = -20
+
+[node name="Label" type="Label" parent="VBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("4_gj1ql")
+theme_override_font_sizes/font_size = 48
+text = "UI / UX"
+
+[node name="Label2" type="Label" parent="VBoxContainer2/VBoxContainer2"]
+layout_mode = 2
+theme = ExtResource("4_gj1ql")
+theme_override_font_sizes/font_size = 40
+text = "https://www.instagram.com/mandyyuhui"
+
+[connection signal="mouse_entered" from="BtnBack" to="." method="_on_btn_back_mouse_entered"]
 [connection signal="pressed" from="BtnBack" to="." method="_on_btn_back_pressed"]

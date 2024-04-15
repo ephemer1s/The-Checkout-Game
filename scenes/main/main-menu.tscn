@@ -146,6 +146,7 @@ text = "    NEW GAME"
 alignment = 0
 
 [node name="BtnOptions" type="Button" parent="VBoxContainer"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 focus_neighbor_top = NodePath("../BtnNewGame")

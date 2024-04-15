@@ -11,10 +11,13 @@ func _process(delta):
     pass
 
 
-func _on_place_holder_text_focus_entered():
+func _on_btn_back_pressed():
+    #get_tree().current_scene.get_parent().remove_child(get_tree().current_scene)
+    Audio.get_node("sfx_button_click").play()
+    get_tree().change_scene_to_file("res://scenes/main/main-menu.tscn")
     pass # Replace with function body.
 
 
-func _on_btn_back_pressed():
-    get_tree().change_scene_to_file("res://scenes/main/main-menu.tscn")
+func _on_btn_back_mouse_entered():
+    Audio.get_node("sfx_button_highlight").play()
     pass # Replace with function body.
