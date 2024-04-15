@@ -5,8 +5,10 @@ class_name State
 var state_id: int
 var state_machine: StateMachine
 var parser: JSONParser
+# parser.itemData()
 
 func enter() -> void:
+    parser = JSONParser.new()
     parser.parse(state_id)
     var animation = parser.itemData["content"]["animation"]
 
@@ -38,24 +40,24 @@ func get_shop_text() -> String:
 func get_demonic_text() -> String:
     return parser.itemData["content"]["description"]["desc_demonic"]
 
-func get_illegible_text() -> Array[String]:
-    '''
-    this function only extract string in brackets in this state's desc, to an array.
-    '''
-    var shop_text = get_shop_text()
-    var demonic_text = get_demonic_text()
-
-    var regex = RegEx.new()
-    regex.compile("\\[[^\\]]*\\]")
-
-    var shop_mosaic = regex.search(shop_text).get_strings()
-    var demonic_mosaic = regex.search(demonic_text).get_strings()
-
-    if OS.is_debug_build():
-        print("[DEBUG MSG] matched mosaic text list:")
-        print(shop_mosaic, demonic_mosaic)
-
-    return [shop_mosaic, demonic_mosaic]
+#func get_illegible_text() -> Array[String]:
+    #'''
+    #this function only extract string in brackets in this state's desc, to an array.
+    #'''
+    #var shop_text = get_shop_text()
+    #var demonic_text = get_demonic_text()
+#
+    #var regex = RegEx.new()
+    #regex.compile("\\[[^\\]]*\\]")
+#
+    #var shop_mosaic = regex.search(shop_text).get_strings()
+    #var demonic_mosaic = regex.search(demonic_text).get_strings()
+#
+    #if OS.is_debug_build():
+        #print("[DEBUG MSG] matched mosaic text list:")
+        #print(shop_mosaic, demonic_mosaic)
+#
+    #return [shop_mosaic, demonic_mosaic]
 
 
 func get_richtext_textstr(text, theme="shop") -> String:
@@ -84,4 +86,5 @@ func get_animation_type_dict() -> String:
 func get_options() -> Array:
     return parser.itemData["content"]["option"]  # option: id:int, tooltip:str, desc:str, next:int
 
-
+func get_cur_id() -> int:
+    return parser.itemData["state_id"]
