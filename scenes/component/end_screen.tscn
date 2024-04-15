@@ -201,6 +201,7 @@ script = ExtResource("1_xylv3")
 visible = false
 position = Vector2(745, 734)
 sprite_frames = SubResource("SpriteFrames_4tpnf")
+animation = &"nameless"
 
 [node name="TrueEnd" type="AnimatedSprite2D" parent="."]
 visible = false
