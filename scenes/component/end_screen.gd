@@ -12,6 +12,9 @@ func _ready() -> void:
     true_end.visible = false
 
 func play_end(end_name: String) -> void:
+    if end_name not in Autoload.endings:
+        Autoload.endings.append(end_name)
+    print("ENDINGS SO FAR:", Autoload.endings)
     achievement_box.set_achievement(end_name)
     if end_name == "summoning":
         Audio.get_node("sfx_ending_summoning").play()

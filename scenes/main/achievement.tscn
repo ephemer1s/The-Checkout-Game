@@ -1,0 +1,95 @@
+[gd_scene load_steps=5 format=3 uid="uid://ch37bi8sq62ty"]
+
+[ext_resource type="Script" path="res://scenes/main/achievement.gd" id="1_fhk12"]
+[ext_resource type="PackedScene" uid="uid://cl0h8wrjqm663" path="res://scenes/component/achievement_box.tscn" id="2_6e07q"]
+[ext_resource type="Theme" uid="uid://cmsoegrpc20f2" path="res://resources/themes/title-mainmenu.tres" id="2_tyoeb"]
+[ext_resource type="Theme" uid="uid://costme5i3h772" path="res://resources/themes/btn-mainmenu.tres" id="4_oq3x6"]
+
+[node name="Achievement" type="CanvasLayer"]
+script = ExtResource("1_fhk12")
+
+[node name="BackgroundWhite" type="ColorRect" parent="."]
+offset_left = -1000.0
+offset_top = -500.0
+offset_right = 3000.0
+offset_bottom = 1500.0
+
+[node name="MarginContainerLeft" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -990.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Label" type="Label" parent="MarginContainerLeft"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("2_tyoeb")
+text = "ACHIEVEMENTS"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainerLeft"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 250
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainerLeft/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 175
+
+[node name="A1" parent="MarginContainerLeft/MarginContainer/VBoxContainer" instance=ExtResource("2_6e07q")]
+layout_mode = 2
+
+[node name="A2" parent="MarginContainerLeft/MarginContainer/VBoxContainer" instance=ExtResource("2_6e07q")]
+layout_mode = 2
+
+[node name="A3" parent="MarginContainerLeft/MarginContainer/VBoxContainer" instance=ExtResource("2_6e07q")]
+layout_mode = 2
+
+[node name="A4" parent="MarginContainerLeft/MarginContainer/VBoxContainer" instance=ExtResource("2_6e07q")]
+layout_mode = 2
+
+[node name="MarginContainerRight" type="MarginContainer" parent="."]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1180.0
+offset_right = -190.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 212
+theme_override_constants/margin_right = 200
+
+[node name="BackButton" type="Button" parent="MarginContainerRight"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme = ExtResource("4_oq3x6")
+text = "BACK"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainerRight"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_top = 142
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainerRight/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 175
+
+[node name="A5" parent="MarginContainerRight/MarginContainer/VBoxContainer" instance=ExtResource("2_6e07q")]
+layout_mode = 2
+
+[node name="A6" parent="MarginContainerRight/MarginContainer/VBoxContainer" instance=ExtResource("2_6e07q")]
+layout_mode = 2
+
+[node name="A7" parent="MarginContainerRight/MarginContainer/VBoxContainer" instance=ExtResource("2_6e07q")]
+layout_mode = 2

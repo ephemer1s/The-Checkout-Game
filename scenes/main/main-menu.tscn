@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/main/main-menu.gd" id="1_eybd6"]
 [ext_resource type="Theme" uid="uid://cmsoegrpc20f2" path="res://resources/themes/title-mainmenu.tres" id="2_ek5ly"]
-[ext_resource type="Texture2D" uid="uid://burrmgr6vuk6o" path="res://assets/inv_card.png" id="3_07r3i"]
+[ext_resource type="Texture2D" uid="uid://n8rym13ssyr1" path="res://assets/inv_card.png" id="3_07r3i"]
 [ext_resource type="Theme" uid="uid://costme5i3h772" path="res://resources/themes/btn-mainmenu.tres" id="3_d4rs5"]
 [ext_resource type="Texture2D" uid="uid://b3khvs2kesice" path="res://assets/title_1.png" id="4_hdtur"]
 [ext_resource type="Texture2D" uid="uid://b35ap2gbjq277" path="res://assets/title_2.png" id="5_86a3t"]
@@ -116,7 +116,7 @@ layout_mode = 2
 texture = ExtResource("3_07r3i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer2"]
-position = Vector2(610, 290)
+position = Vector2(287.273, 267.273)
 sprite_frames = SubResource("SpriteFrames_tftj2")
 autoplay = "default"
 frame_progress = 0.295766
@@ -146,7 +146,6 @@ text = "    NEW GAME"
 alignment = 0
 
 [node name="BtnOptions" type="Button" parent="VBoxContainer"]
-visible = false
 layout_mode = 2
 size_flags_vertical = 3
 focus_neighbor_top = NodePath("../BtnNewGame")
@@ -154,7 +153,7 @@ focus_neighbor_bottom = NodePath("../BtnCredits")
 focus_next = NodePath("../BtnCredits")
 focus_previous = NodePath("../BtnNewGame")
 theme = ExtResource("3_d4rs5")
-text = "    OPTIONS"
+text = "    ACHIEVEMENTS"
 alignment = 0
 
 [node name="BtnCredits" type="Button" parent="VBoxContainer"]
@@ -182,7 +181,6 @@ alignment = 0
 [connection signal="mouse_entered" from="VBoxContainer/BtnNewGame" to="." method="_on_btn_new_game_mouse_entered"]
 [connection signal="pressed" from="VBoxContainer/BtnNewGame" to="." method="_on_btn_new_game_pressed"]
 [connection signal="mouse_entered" from="VBoxContainer/BtnOptions" to="." method="_on_btn_options_mouse_entered"]
-[connection signal="pressed" from="VBoxContainer/BtnOptions" to="." method="_on_btn_options_pressed"]
 [connection signal="mouse_entered" from="VBoxContainer/BtnCredits" to="." method="_on_btn_credits_mouse_entered"]
 [connection signal="pressed" from="VBoxContainer/BtnCredits" to="." method="_on_btn_credit_pressed"]
 [connection signal="mouse_entered" from="VBoxContainer/BtnQuitGame" to="." method="_on_btn_quit_game_mouse_entered"]
