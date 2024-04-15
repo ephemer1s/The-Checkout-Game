@@ -9,6 +9,7 @@ var cur_state = State.READY
 var is_hovering = false
 
 var next_state_id
+var money_action = ""
 
 enum State {
     READY,
@@ -21,7 +22,6 @@ func _ready() -> void:
     shadow.visible = false
     button.connect("mouse_entered", on_mouse_entered)
     button.connect("mouse_exited", on_mouse_exited)
-    setup_button("aslkdjfklajflksajfpoqwuierpoqjfklasjfdlkashjfaposuiipo", 1)
 
 func on_mouse_entered() -> void:
     shadow.visible = true
@@ -37,10 +37,11 @@ func on_mouse_exited() -> void:
         shadow.visible = false
         cur_state = State.READY
 
-func setup_button(text: String, _next_state_id: int) -> void:
+func setup_button(text: String, _next_state_id: int, _money_action: String) -> void:
     button.text = text
     shadow.text = text
     next_state_id = _next_state_id
+    money_action = _money_action
 
 func _process(delta: float) -> void:
     if cur_state == State.HOVER and Input.is_action_just_pressed("confirm"):
@@ -52,6 +53,6 @@ func _process(delta: float) -> void:
             shadow.visible = false
             cur_state = State.READY
         else:
-            Autoload.emit_transition_to(next_state_id)
+            Autoload.emit_transition_to(next_state_id, money_action)
             cur_state = State.HOVER
             animation_player.play("on_hover")

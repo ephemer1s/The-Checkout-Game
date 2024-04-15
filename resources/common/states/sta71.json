@@ -1,0 +1,27 @@
+{
+  "id": 71,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "confused",
+      "body": "register",
+      "logo": "mask",
+      "demon": "open",
+      "hand": "heartandsoul",
+      "mask": "default"
+    },
+    "description": {
+      "tooltip": "",
+      "desc_shop": "Looks like you do not have enough [cash], sir.",
+      "desc_demonic": "Looks like you do not have enough [flesh], sir."
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "",
+        "desc": "",
+        "next": 16
+      }
+    ]
+  }
+}

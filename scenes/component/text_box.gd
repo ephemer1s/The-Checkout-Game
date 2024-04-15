@@ -16,7 +16,8 @@ var hovering = false
 enum TextBoxState {
     READY,
     READING,
-    FINISHED
+    FINISHED,
+    READY_FOR_NEXT
 }
 
 func ready_text_box():
@@ -39,12 +40,9 @@ func on_mouse_exited() -> void:
 func _process(delta: float) -> void:
     match current_state:
         TextBoxState.READY:
-            print("here")
             if end_animation.is_playing():
                 end_animation.stop()
-            print("here1")
             if !text_queue.is_empty():
-                print("here2")
                 display_text()
         TextBoxState.READING:
             if end_animation.is_playing():
@@ -57,7 +55,7 @@ func _process(delta: float) -> void:
                 on_tween_completed()
         TextBoxState.FINISHED:
             if (hovering and Input.is_action_just_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
-                change_state(TextBoxState.READY)
+                change_state(TextBoxState.READY_FOR_NEXT)
 
 
 func clear_textbox() -> void:
@@ -92,9 +90,14 @@ func change_state(next_state: TextBoxState) -> void:
     current_state = next_state
     match current_state:
         TextBoxState.READY:
-            print("[DEBUG MSG] Changing state to: State.READY")
+            pass
+            #print("[DEBUG MSG] Changing state to: State.READY")
         TextBoxState.READING:
-            print("[DEBUG MSG] Changing state to: State.READING")
+            pass
+            #print("[DEBUG MSG] Changing state to: State.READING")
         TextBoxState.FINISHED:
+            pass
+            #print("[DEBUG MSG] Changing state to: State.FINISHED")
+        TextBoxState.READY_FOR_NEXT:
+            #print("[DEBUG MSG] Changing state to: State.READY_FOR_NEXT")
             text_finished.emit()
-            print("[DEBUG MSG] Changing state to: State.FINISHED")

@@ -19,7 +19,7 @@ func _ready() -> void:
     left_margin_container.add_theme_constant_override("margin_top", rng.randi_range(140, 240))
     right_margin_container.add_theme_constant_override("margin_top", rng.randi_range(140, 240))
 
-func add_option(text:String, next_state_id:int) -> void:
+func add_option(text: String, next_state_id: int, money_action: String) -> void:
     var button_instance = button_scene.instantiate() as ShadowButton
     var added_to_right = false
     if rng.randi_range(0, 1) == 0 :
@@ -29,7 +29,7 @@ func add_option(text:String, next_state_id:int) -> void:
         added_to_right = true
         right_container.add_child(button_instance)
         right_container.add_theme_constant_override("separation", right_separation_init_value / len(right_container.get_children()))
-    button_instance.setup_button(text, next_state_id)
+    button_instance.setup_button(text, next_state_id, money_action)
 
     var allowed_flags = [Control.SIZE_SHRINK_BEGIN, Control.SIZE_SHRINK_CENTER, Control.SIZE_SHRINK_END]
     if len(text) > 10 && added_to_right:
@@ -39,6 +39,3 @@ func add_option(text:String, next_state_id:int) -> void:
     else:
         button_instance.size_flags_horizontal = allowed_flags[rng.randi_range(0, 2)]
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-    pass

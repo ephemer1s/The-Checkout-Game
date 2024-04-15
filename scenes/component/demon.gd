@@ -19,6 +19,9 @@ func _ready() -> void:
 func _process(delta: float) -> void:
     pass
 
+func hide_heart_and_soul() -> void:
+    heart_and_soul_animation.visible = false
+
 func appear() -> void:
     appear_animation.visible = true
     appear_animation.play("default")
@@ -40,7 +43,13 @@ func play_mask_animation(animation_name: String) -> void:
 func play_hand_animation(animation_name: String) -> void:
     hand_animation.play(animation_name)
 
-func play_heart_and_choice_animation() -> void:
+func enlarge_hand_scale() -> void:
+    hand_animation.scale = Vector2(0.9, 0.9)
+
+func reset_hand_scale() -> void:
+    hand_animation.scale = Vector2(0.8, 0.8)
+
+func play_heart_and_soul_animation() -> void:
     play_body_animation("default")
     play_mask_animation("laugh")
     play_hand_animation("open")

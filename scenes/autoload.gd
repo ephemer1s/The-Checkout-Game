@@ -1,6 +1,6 @@
 extends Node
 
-signal transition_to(state_id)
+signal transition_to(state_id, money_action)
 
-func emit_transition_to(state_id: int) -> void:
-    transition_to.emit(state_id)
+func emit_transition_to(state_id: int, money_action: String) -> void:
+    transition_to.emit(state_id, money_action)

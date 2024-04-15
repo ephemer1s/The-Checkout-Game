@@ -3,25 +3,31 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
+      "face": "shock",
+      "body": "default",
+      "logo": "default",
       "demon": "",
       "hand": "",
       "mask": ""
     },
     "description": {
-      "tooltip": "Normal Route but without blurs",
-      "desc_shop": "",
+      "tooltip": "",
+      "desc_shop": "Sir, I don't understand.",
       "desc_demonic": ""
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "null",
-        "desc": "",
-        "next": 100
-      }
+        "tooltip": "",
+        "desc": "*Say nothing*",
+        "next": 2
+      },
+      {
+        "id": 2,
+        "tooltip": "",
+        "desc": "*Laughs*",
+        "next": 99
+      },
     ]
   }
 }

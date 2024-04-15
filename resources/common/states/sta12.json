@@ -3,24 +3,24 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "neutral",
+      "body": "default",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "default",
+      "mask": "default"
     },
     "description": {
-      "tooltip": "[Ah there you are]. You're now given [a 10% discount for today]'s [purchase]!  (\"discount\" blurred, but also apparent on poster) (register number updated)",
-      "desc_shop": "[Ah there you are]. You're now given [a 10% discount for today]'s [purchase]!  (\"discount\" blurred, but also apparent on poster) (register number updated)",
-      "desc_demonic": "[Ah there it is]. You're now given [the permission to use ABC]'s [flesh]!"
+      "tooltip": "Sorry, seems like that name isn't in our system.",
+      "desc_shop": "Sorry, seems like that name isn't in our system.",
+      "desc_demonic": "Sorry, seems like that name isn't in our system."
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "null",
-        "desc": "",
-        "next": 15
+        "tooltip": "Say nothing",
+        "desc": "*Say nothing*",
+        "next": 10
       }
     ]
   }

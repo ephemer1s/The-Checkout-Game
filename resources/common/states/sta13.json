@@ -3,24 +3,30 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "smile",
+      "body": "default",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "big_contract",
+      "mask": "laugh"
     },
     "description": {
-      "tooltip": "Sorry, seems like that [number] isn't in our system.",
-      "desc_shop": "Sorry, seems like that [number] isn't in our system.",
-      "desc_demonic": "Sorry, seems like that [name] isn't in our system."
+      "tooltip": "[Awesome]. Can you please fill your name in the blank then sign here?",
+      "desc_shop": "[Awesome]. Can you please fill your name in the blank then sign here?",
+      "desc_demonic": "[Awesome]. Can you please fill your name in the blank then sign here?"
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "Say nothing",
-        "desc": "Say nothing",
-        "next": 11
+        "tooltip": "Yes",
+        "desc": "Yes",
+        "next": 102
+      },
+      {
+        "id": 2,
+        "tooltip": "Nevermind",
+        "desc": "\"Nevermind\"",
+        "next": 14
       }
     ]
   }

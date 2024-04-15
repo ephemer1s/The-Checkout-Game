@@ -3,24 +3,45 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "smile",
+      "body": "donation",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "blood",
+      "mask": "default"
     },
     "description": {
-      "tooltip": "Oh you have some personal stuff in your bag, here you go (open inventory menu)",
-      "desc_shop": "Oh you have some personal stuff in your bag, here you go (open inventory menu)",
-      "desc_demonic": ""
+      "tooltip": "Would you like to [make a donation] along with your [purchase] today? That'd make you eligible for [the promotion we are running now]!",
+      "desc_shop": "Would you like to [make a donation] along with your [purchase] today? That'd make you eligible for [the promotion we are running now]!",
+      "desc_demonic": "Would you like to [add some of your own blood] along with your [deal] today? That'd make you eligible for [a stronger bond with the demon]!"
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "say nothing",
-        "desc": "",
-        "next": 1
+        "tooltip": "add money",
+        "money": 1.03,
+        "desc": "\"Yes. I'll make a $1.03 donation.\"",
+        "next": 7
+      },
+      {
+        "id": 2,
+        "tooltip": "add money",
+        "money": 3.43,
+        "desc": "\"Yes. I'll make a $3.43 donation.\"",
+        "next": 70
+      },
+      {
+        "id": 3,
+        "tooltip": "add money",
+        "money": 6.66,
+        "desc": "\"Yes. I'll make a $6.66 donation.\"",
+        "next": 70
+      },
+      {
+        "id": 4,
+        "tooltip": "",
+        "desc": "\"No, screw that.\"",
+        "next": 7
       }
     ]
   }

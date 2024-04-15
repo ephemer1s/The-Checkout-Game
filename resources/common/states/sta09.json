@@ -1,33 +1,57 @@
 {
-    "id": 9,
-    "type": "state",
-    "content": {
-      "animation": {
-        "face": "",
-        "body": "",
-        "logo": "",
-        "demon": "",
-        "hand": "",
-        "mask": ""
+  "id": 9,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "neutral",
+      "body": "default",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "open",
+      "mask": "default"
+    },
+    "description": {
+      "tooltip": "Cool. Can I please see your [card] or have the name on file please?",
+      "desc_shop": "Cool. Can I please see your [card] or have the name on file please?",
+      "desc_demonic": "Cool. Can I please see your [contract] have the name on file please?"
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "",
+        "desc": "\"Bill\"",
+        "next": 12
       },
-      "description": {
-        "tooltip": "Are you [a member] of [our store]? (points to advertisement on register)",
-        "desc_shop": "Are you [a member] of [our store]? (points to advertisement on register)",
-        "desc_demonic": "Are you [the owner] of [another human]?"
+      {
+        "id": 2,
+        "tooltip": "anything else",
+        "desc": "\"Blake\"",
+        "next": 11
       },
-      "option": [
-        {
-          "id": 1,
-          "tooltip": "yes",
-          "desc": "Yes",
-          "next": 10
-        },
-        {
-          "id": 2,
-          "tooltip": "no",
-          "desc": "No",
-          "next": 11
-        }
-      ]
-    }
+      {
+        "id": 3,
+        "tooltip": "anything else",
+        "desc": "\"Mandy\"",
+        "next": 12
+      },
+      {
+        "id": 4,
+        "tooltip": "anything else",
+        "desc": "\"Ranger\"",
+        "next": 12
+      },
+      {
+        "id": 5,
+        "tooltip": "anything else",
+        "desc": "\"Joy\"",
+        "next": 12
+      },
+      {
+        "id": 5,
+        "tooltip": "anything else",
+        "desc": "\"Bing\"",
+        "next": 12
+      },
+    ]
   }
+}

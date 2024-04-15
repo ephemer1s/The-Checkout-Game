@@ -3,36 +3,24 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "smile",
+      "body": "register",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "default",
+      "mask": "default"
     },
     "description": {
-      "tooltip": "Would you like to [make a donation] along with your [purchase] today? That'd make you eligible for [the promotion we are running now]! (the word 'donation' is on the jar while cashier asks the question, but it is blurred)",
-      "desc_shop": "Would you like to [make a donation] along with your [purchase] today? That'd make you eligible for [the promotion we are running now]! (the word 'donation' is on the jar while cashier asks the question, but it is blurred)",
-      "desc_demonic": "Would you like to [add some of your own blood] along with your [deal] today? That'd make you eligible for [a stronger bond with the demon]!"
+      "tooltip": "Got it. Your [here is your add  total]. ",
+      "desc_shop": "Got it. Your [here is your current total]. ",
+      "desc_demonic": "Got it. Your [contract is almost ready]."
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "yes (correct answer $3.43)",
+        "tooltip": "",
         "desc": "",
         "next": 8
-      },
-      {
-        "id": 2,
-        "tooltip": "no",
-        "desc": "",
-        "next": 9
-      },
-      {
-        "id": 2,
-        "tooltip": "dotaned too much blood",
-        "desc": "",
-        "next": 106
       }
     ]
   }

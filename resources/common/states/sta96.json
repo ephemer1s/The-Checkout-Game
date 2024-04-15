@@ -1,0 +1,27 @@
+{
+  "id": 96,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "smile",
+      "body": "default",
+      "logo": "default",
+      "demon": "",
+      "hand": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "",
+      "desc_shop": "Great! We are all done here. Thank you for shopping at JoyMart!",
+      "desc_demonic": ""
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "",
+        "desc": "",
+        "next": 100
+      }
+    ]
+  }
+}

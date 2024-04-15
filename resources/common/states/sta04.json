@@ -3,12 +3,12 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "neutral",
+      "body": "default",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "default",
+      "mask": "default"
     },
     "description": {
       "tooltip": "I am sorry to hear that. How can I help you?",
@@ -18,15 +18,15 @@
     "option": [
       {
         "id": 1,
-        "tooltip": "Nevermind",
-        "desc": "Nevermind",
-        "next": 1
+        "tooltip": "\"Nevermind\"",
+        "desc": "\"Nevermind\"",
+        "next": 3
       },
       {
         "id": 2,
-        "tooltip": "I'd like to sacrifice my soul to [the old god]",
-        "desc": "I'd like to sacrifice my soul to [ThE oLd GoD]",
-        "next": 101
+        "tooltip": "",
+        "desc": "\"I'd like to sacrifice my soul to [ThE oLd GoD].\"",
+        "next": 99
       }
     ]
   }

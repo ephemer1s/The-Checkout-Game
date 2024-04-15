@@ -1,27 +1,33 @@
 {
-  "id": 8,
-  "type": "state",
-  "content": {
-    "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
-    },
-    "description": {
-      "tooltip": "Thank you sir! After applying our promotions, your new [total is $30.00]. (register value updated)",
-      "desc_shop": "Thank you sir! After applying our promotions, your new [total is $30.00]. (register value updated)",
-      "desc_demonic": "Thank you sir! Your new [total is kidney/heart/tongue/blood]. (register value updated)"
-    },
-    "option": [
-      {
-        "id": 1,
-        "tooltip": "say nothing",
-        "desc": "",
-        "next": 9
-      }
-    ]
+    "id": 8,
+    "type": "state",
+    "content": {
+      "animation": {
+        "face": "neutral",
+        "body": "register",
+        "logo": "mask",
+        "demon": "default",
+        "hand": "default",
+        "mask": "default"
+      },
+      "description": {
+        "tooltip": "Are you [a member] of [our store]?",
+        "desc_shop": "Are you [a member] of [our store]?",
+        "desc_demonic": "Are you [the owner] of [another human]?"
+      },
+      "option": [
+        {
+          "id": 1,
+          "tooltip": "yes",
+          "desc": "\"Yes\"",
+          "next": 9
+        },
+        {
+          "id": 2,
+          "tooltip": "no",
+          "desc": "\"No\"",
+          "next": 10
+        }
+      ]
+    }
   }
-}

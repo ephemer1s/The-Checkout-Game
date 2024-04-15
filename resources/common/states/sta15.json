@@ -3,29 +3,24 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "neutral",
+      "body": "default",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "blood",
+      "mask": "laugh"
     },
     "description": {
-      "tooltip": "OK that's fine. How would you like to pay today?",
-      "desc_shop": "OK that's fine. How would you like to pay today?",
-      "desc_demonic": "OK that's fine. How would you like to pay today?"
+      "tooltip": "So that's [your payment]... ",
+      "desc_shop": "So that's [your payment]... ",
+      "desc_demonic": "So that's [the flesh]... "
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "*[cash/flesh]*",
+        "tooltip": "alternative",
         "desc": "",
-        "next": 16
-      },
-      {
-        "id": 2,
-        "tooltip": "*[card/soul]*",
-        "desc": "",
+        "alternative": 71,
         "next": 17
       }
     ]

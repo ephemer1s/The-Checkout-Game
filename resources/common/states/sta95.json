@@ -1,0 +1,39 @@
+{
+  "id": 95,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "smile",
+      "body": "handling",
+      "logo": "default",
+      "demon": "",
+      "hand": "",
+      "mask": ""
+    },
+    "description": {
+      "tooltip": "",
+      "desc_shop": "Great! Let me scan these for you. Will you be paying with cards today?",
+      "desc_demonic": ""
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "",
+        "desc": "\"Yes.\"",
+        "next": 96
+      },
+      {
+        "id": 2,
+        "tooltip": "",
+        "desc": "\"No.\"",
+        "next": 96
+      },
+      {
+        "id": 3,
+        "tooltip": "",
+        "desc": "[Calculator]!",
+        "next": 97
+      },
+    ]
+  }
+}

@@ -560,7 +560,6 @@ rotation = -0.286587
 shape = SubResource("RectangleShape2D_t3317")
 
 [node name="Bag" type="TextureButton" parent="."]
-z_index = 1
 material = SubResource("ShaderMaterial_qanm1")
 layout_mode = 1
 anchors_preset = 8

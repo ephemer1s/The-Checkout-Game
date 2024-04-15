@@ -8,6 +8,9 @@ extends Node
 @onready var demon = $Demon
 @onready var figure = $Figure
 @onready var text_box = $TextBox
+@onready var animation_player = $AnimationPlayer
+@onready var end_screen = $EndScreen
+
 var parser:JSONParser = JSONParser.new()
 func _ready() -> void:
     item_description.text = ""

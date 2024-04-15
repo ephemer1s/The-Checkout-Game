@@ -3,9 +3,9 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
+      "face": "smile",
+      "body": "default",
+      "logo": "default",
       "demon": "",
       "hand": "",
       "mask": ""
@@ -19,15 +19,21 @@
       {
         "id": 1,
         "tooltip": "anything normal",
-        "desc": "",
-        "next": 98
+        "desc": "\"Checking out.\"",
+        "next": 95
       },
       {
         "id": 2,
-        "tooltip": "mosaic sorcery",
-        "desc": "",
-        "next": 99
-      }
+        "tooltip": "[mosaic sorcery]",
+        "desc": "[Calculator]!",
+        "next": 97
+      },
+      {
+        "id": 1,
+        "tooltip": "anything normal",
+        "desc": "\"Just making these purchases.\"",
+        "next": 95
+      },
     ]
   }
 }

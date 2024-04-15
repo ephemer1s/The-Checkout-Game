@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://cwcaiev610pd0"]
+[gd_scene load_steps=49 format=3 uid="uid://cwcaiev610pd0"]
 
 [ext_resource type="Script" path="res://scenes/component/demon.gd" id="1_xwwdn"]
 [ext_resource type="Texture2D" uid="uid://c46f8bqfitfcs" path="res://assets/demon_1.png" id="2_7w5ee"]
@@ -13,6 +13,12 @@
 [ext_resource type="Texture2D" uid="uid://b3cdpy1061mhn" path="res://assets/mask_shock_1.png" id="11_j532m"]
 [ext_resource type="Texture2D" uid="uid://c3lttnrtc216q" path="res://assets/mask_shock_2.png" id="12_mau7q"]
 [ext_resource type="Texture2D" uid="uid://d060siwey5rf4" path="res://assets/mask_shock_3.png" id="13_le4gu"]
+[ext_resource type="Texture2D" uid="uid://bouq6q1r105ji" path="res://assets/hand_blood_1.png" id="14_n2e74"]
+[ext_resource type="Texture2D" uid="uid://xxlx5svoqetu" path="res://assets/hand_blood_2.png" id="15_ghgwg"]
+[ext_resource type="Texture2D" uid="uid://bqdop5y683n2a" path="res://assets/hand_blood_3.png" id="16_r1oky"]
+[ext_resource type="Texture2D" uid="uid://ccvejlhby26hn" path="res://assets/hand_contract_1.png" id="17_pxnsy"]
+[ext_resource type="Texture2D" uid="uid://c4dt3kxtt855f" path="res://assets/hand_contract_2.png" id="18_e5aip"]
+[ext_resource type="Texture2D" uid="uid://cjil367oatlna" path="res://assets/hand_contract_3.png" id="19_dmsb0"]
 [ext_resource type="Texture2D" uid="uid://b4xbd7j2ycku6" path="res://assets/blank_for_the_blank_god.png" id="20_h6ufd"]
 [ext_resource type="Texture2D" uid="uid://c5ge103ol8qjl" path="res://assets/transition_1.png" id="20_imj0e"]
 [ext_resource type="Texture2D" uid="uid://dtrgcjpu85vaq" path="res://assets/hand_open_1.png" id="20_ovjdb"]
@@ -99,6 +105,48 @@ animations = [{
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vr0rt"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_pxnsy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_e5aip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_dmsb0")
+}],
+"loop": true,
+"name": &"big_contract",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_n2e74")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ghgwg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_r1oky")
+}],
+"loop": true,
+"name": &"blood",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_pxnsy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_e5aip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_dmsb0")
+}],
+"loop": true,
+"name": &"contract",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("20_h6ufd")
@@ -244,14 +292,13 @@ frame_progress = 0.922076
 position = Vector2(1599, 635)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_svelr")
-frame_progress = 0.573767
+animation = &"shock"
 
 [node name="Hand" type="AnimatedSprite2D" parent="."]
 position = Vector2(1600, 762)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_vr0rt")
-animation = &"open"
-frame_progress = 0.204745
+animation = &"big_contract"
 
 [node name="Appearing" type="AnimatedSprite2D" parent="."]
 visible = false

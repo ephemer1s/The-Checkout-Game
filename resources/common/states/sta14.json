@@ -3,30 +3,30 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "smile",
+      "body": "register",
+      "logo": "mask",
+      "demon": "open",
+      "hand": "heartandsoul",
+      "mask": "default"
     },
     "description": {
-      "tooltip": "[Awesome]. Can you please fill your name in the blank then sign here?",
-      "desc_shop": "[Awesome]. Can you please fill your name in the blank then sign here?",
-      "desc_demonic": "[Awesome]. Can you please fill your name in the blank then sign here?"
+      "tooltip": "How would you like to pay today?",
+      "desc_shop": "How would you like to pay today?",
+      "desc_demonic": "How would you like to pay today?"
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "Yes",
-        "desc": "Yes",
-        "next": 102
+        "tooltip": "",
+        "desc": "[CASH AND FLESH]",
+        "next": 15
       },
       {
         "id": 2,
-        "tooltip": "Nevermind",
-        "desc": "Nevermind",
-        "next": 15
+        "tooltip": "",
+        "desc": "[CARD AND SOUL]",
+        "next": 16
       }
     ]
   }

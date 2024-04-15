@@ -1,0 +1,28 @@
+{
+  "id": 7,
+  "type": "state",
+  "content": {
+    "animation": {
+      "face": "smile",
+      "body": "register",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "default",
+      "mask": "default"
+    },
+    "description": {
+      "tooltip": "",
+      "desc_shop": "Nice! You're now eligible for [our savings promotion]! Your [here is your current total]. ",
+      "desc_demonic": "Nice! You're now eligible for [an demononic upgrade]! Your [contract is almost ready]."
+    },
+    "option": [
+      {
+        "id": 1,
+        "tooltip": "sub money",
+        "desc": "Awesome!",
+        "money": 4.00,
+        "next": 8
+      }
+    ]
+  }
+}

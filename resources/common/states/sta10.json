@@ -3,30 +3,30 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "smile",
+      "body": "default",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "contract",
+      "mask": "laugh"
     },
     "description": {
-      "tooltip": "Cool. Can I please see your [card] or have the [number] on file please?  (poster indicates only phone number is required during checkout)",
-      "desc_shop": "Cool. Can I please see your [card] or have the [number] on file please?  (poster indicates only phone number is required during checkout)",
-      "desc_demonic": "Cool. Can I please see your [contract] have the [name] on file please?  (poster indicates only the name is required during checkout)"
+      "tooltip": "Would you like to become one? It's [free]! Just [provide] your [number] to us and you're done.",
+      "desc_shop": "Would you like to become one? It's [free]! Just [provide] your [number] to us and you're done.",
+      "desc_demonic": "Would you like to become one? It's [easy]! Just [sign] your [name] to us and you're done."
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "phone number/name/showcard",
-        "desc": "",
-        "next": 12
+        "tooltip": "yes",
+        "desc": "\"Yes please!\"",
+        "next": 13
       },
       {
         "id": 2,
-        "tooltip": "anything else",
-        "desc": "",
-        "next": 13
+        "tooltip": "no",
+        "desc": "\"No, thanks.\"",
+        "next": 14
       }
     ]
   }

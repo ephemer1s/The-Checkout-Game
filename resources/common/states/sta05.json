@@ -3,22 +3,22 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "neutral",
+      "body": "handling",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "default",
+      "mask": "default"
     },
     "description": {
-      "tooltip": "I see that you have brought your own bag.  So there's no need to purchase that. (grocery bag)",
-      "desc_shop": "I see that you have brought your own bag.  So there's no need to purchase that. (grocery bag)",
-      "desc_demonic": "I see that you have brought your own bag. So there's no need to purchase that. (body bag)"
+      "tooltip": "I see that you have brought your own bag.  So there's no need to purchase that.",
+      "desc_shop": "I see that you have brought your own bag.  So there's no need to purchase that.",
+      "desc_demonic": "I see that you have brought your own bag. So there's no need to purchase that."
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "say nothing",
+        "tooltip": "",
         "desc": "",
         "next": 6
       }

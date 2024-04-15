@@ -3,30 +3,25 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "smile",
+      "body": "default",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "open",
+      "mask": "default"
     },
     "description": {
-      "tooltip": "Would you like to become one? It's [free]! Just [provide] your [number] to us and you're done.",
-      "desc_shop": "Would you like to become one? It's [free]! Just [provide] your [number] to us and you're done.",
-      "desc_demonic": "Would you like to become one? It's [easy]! Just [sign] your [name] to us and you're done. (giggles) (Demon is tricking the player)"
+      "tooltip": "Ah, [there you are]. You're now given [a ten percent discount for today]'s [purchase]!",
+      "desc_shop": "Ah, [there you are]. You're now given [a ten percent discount for today]'s [purchase]!",
+      "desc_demonic": "Ah, [there it is]. You're now given [the full permission to use Blake]'s [flesh]!"
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "yes",
-        "desc": "Yes.",
-        "next": 1
-      },
-      {
-        "id": 2,
-        "tooltip": "no",
-        "desc": "No.",
-        "next": 2
+        "tooltip": "mul money",
+        "desc": "*Say nothing*",
+        "money": 0.9,
+        "next": 14
       }
     ]
   }

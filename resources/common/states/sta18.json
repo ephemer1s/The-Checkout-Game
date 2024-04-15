@@ -3,30 +3,24 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "smile",
+      "body": "default",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "open",
+      "mask": "laugh"
     },
     "description": {
-      "tooltip": "[Great]! [Thank you for shopping at ABC]. [have a terrific day]!",
-      "desc_shop": "[Great]! [Thank you for shopping at ABC]. [have a terrific day]!",
-      "desc_demonic": "[Great]! [Thank you for shopping at ABC]. [have a terrific day]!"
+      "tooltip": "Great! Thank you for [shopping at JoyMart]. Have a terrific day!",
+      "desc_shop": "Great! Thank you for [shopping at JoyMart]. Have a [terrific] day!",
+      "desc_demonic": "Great! Thank you for [signing at HappyMurder]. Have a [murderous] day!"
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "used own flesh",
+        "tooltip": "",
         "desc": "",
-        "next": 103
-      },
-      {
-        "id": 2,
-        "tooltip": "used friends flesh",
-        "desc": "",
-        "next": 105
+        "next": 104
       }
     ]
   }

@@ -3,30 +3,24 @@
   "type": "state",
   "content": {
     "animation": {
-      "face": "",
-      "body": "",
-      "logo": "",
-      "demon": "",
-      "hand": "",
-      "mask": ""
+      "face": "neutral",
+      "body": "register",
+      "logo": "mask",
+      "demon": "default",
+      "hand": "open",
+      "mask": "laugh"
     },
     "description": {
-      "tooltip": "So that's [30.6 dollars]... and here's the [change]. We're good. (place coins on counter)",
-      "desc_shop": "So that's [30.6 dollars]... and here's the [change]. We're good. (place coins on counter)",
-      "desc_demonic": "So that's [the flesh]... and here's the [blood]. We're good. (takes all body parts away)"
+      "tooltip": "[OK]. [Swipe your credit card] when ready. ",
+      "desc_shop": "[OK]. [Swipe your credit card] when ready. ",
+      "desc_demonic": "[OK]. [Give me your hand] when ready. "
     },
     "option": [
       {
         "id": 1,
-        "tooltip": "null",
-        "desc": "",
+        "tooltip": "swipe card",
+        "desc": "*swipe card*",
         "next": 18
-      },
-      {
-        "id": 2,
-        "tooltip": "not enough",
-        "desc": "",
-        "next": 15
       }
     ]
   }

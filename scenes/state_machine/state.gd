@@ -12,20 +12,43 @@ func enter(_state_id: int, _state_machine: StateMachine, _parser: JSONParser) ->
     parser = _parser
 
     parser.parse(state_id)
-    print("StateId:", state_id)
-    var animation = parser.itemData["content"]["animation"]
+    if parser.itemData["type"] == "state":
+        var animation = parser.itemData["content"]["animation"]
 
-    state_machine.owner.figure.play_face_animation(animation["face"])
-    state_machine.owner.figure.play_body_animation(animation["body"])
-    state_machine.owner.figure.play_logo_animation(animation["logo"])
-    state_machine.owner.demon.play_mask_animation(animation["mask"])
-    state_machine.owner.demon.play_body_animation(animation["demon"])
-    state_machine.owner.demon.play_hand_animation(animation["hand"])
+        state_machine.owner.figure.play_face_animation(animation["face"])
+        state_machine.owner.figure.play_body_animation(animation["body"])
+        state_machine.owner.figure.play_logo_animation(animation["logo"])
+        if animation["logo"] == "mask":
+            state_machine.owner.figure.update_background()
+            state_machine.owner.figure.update_special()
+            state_machine.owner.figure.update_midground()
 
-    state_machine.owner.text_box.queue_text(get_richtext_textstr(get_shop_text()))
-    state_machine.owner.text_box.ready_text_box()
-    print(state_machine.owner.text_box.text_queue)
-    print(state_machine.owner.text_box.current_state)
+        state_machine.owner.demon.reset_hand_scale()
+        if animation["demon"] == 'appear':
+            state_machine.owner.demon.appear()
+            state_machine.owner.demon.hide_heart_and_soul()
+        elif animation["hand"] == "heartandsoul":
+            state_machine.owner.demon.play_heart_and_soul_animation()
+        else:
+            state_machine.owner.demon.hide_heart_and_soul()
+            if animation["hand"] == "big_contract":
+                state_machine.owner.demon.enlarge_hand_scale()
+            state_machine.owner.demon.play_mask_animation(animation["mask"])
+            state_machine.owner.demon.play_body_animation(animation["demon"])
+            state_machine.owner.demon.play_hand_animation(animation["hand"])
+
+        state_machine.owner.text_box.queue_text(get_richtext_textstr(get_shop_text()))
+        state_machine.owner.text_box.ready_text_box()
+    elif parser.itemData["type"] == "ending":
+        var ending_name = parser.itemData["content"]["title"]
+        state_machine.owner.color_rect.visible = false
+        state_machine.owner.margin_container.visible = false
+        state_machine.owner.animation_player.play("fade_out")
+        await state_machine.owner.animation_player.animation_finished
+
+        state_machine.owner.end_screen.play_end(ending_name)
+        #state_machine.owner.text_box.queue_text("Obtained ending:" + ending_name)
+        #state_machine.owner.text_box.ready_text_box()
 
 func exit() -> void:
     if is_instance_valid(self):
@@ -94,3 +117,6 @@ func get_options() -> Array:
 
 func get_cur_id() -> int:
     return parser.itemData["state_id"]
+
+func round_place(num, places):
+    return round(num * pow(10, places)) / pow(10, places)
