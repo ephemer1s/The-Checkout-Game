@@ -5,8 +5,6 @@ class_name State
 var state_id: int
 var state_machine: StateMachine
 var parser: JSONParser
-# parser.itemData()
-
 
 func enter(_state_id: int, _state_machine: StateMachine, _parser: JSONParser) -> void:
     state_id = _state_id
@@ -14,17 +12,20 @@ func enter(_state_id: int, _state_machine: StateMachine, _parser: JSONParser) ->
     parser = _parser
 
     parser.parse(state_id)
+    print("StateId:", state_id)
     var animation = parser.itemData["content"]["animation"]
 
-    print(state_machine)
-    print(state_machine.owner)
     state_machine.owner.figure.play_face_animation(animation["face"])
     state_machine.owner.figure.play_body_animation(animation["body"])
     state_machine.owner.figure.play_logo_animation(animation["logo"])
     state_machine.owner.demon.play_mask_animation(animation["mask"])
     state_machine.owner.demon.play_body_animation(animation["demon"])
+    state_machine.owner.demon.play_hand_animation(animation["hand"])
 
     state_machine.owner.text_box.queue_text(get_richtext_textstr(get_shop_text()))
+    state_machine.owner.text_box.ready_text_box()
+    print(state_machine.owner.text_box.text_queue)
+    print(state_machine.owner.text_box.current_state)
 
 func exit() -> void:
     if is_instance_valid(self):

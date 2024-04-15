@@ -1,5 +1,7 @@
 extends CanvasLayer
 
+class_name ChoiceScreen
+
 @onready var color_rect = $ColorRect
 @onready var left_container: VBoxContainer = $MarginContainLeft/VBoxContainer
 @onready var right_container: VBoxContainer = $MarginContainerRight/VBoxContainer

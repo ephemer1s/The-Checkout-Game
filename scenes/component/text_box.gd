@@ -1,5 +1,7 @@
 extends Node
 
+signal text_finished
+
 const TEXT_READ_RATE: float = 0.02
 var current_state: TextBoxState = TextBoxState.READY
 var text_queue = []
@@ -17,25 +19,15 @@ enum TextBoxState {
     FINISHED
 }
 
+func ready_text_box():
+    current_state = TextBoxState.READY
+
 func queue_text(next_text):
     text_queue.push_back(next_text)
 
 func _ready():
     margin_container.connect("mouse_entered", on_mouse_entered)
     margin_container.connect("mouse_exited", on_mouse_exited)
-
-    #if OS.is_debug_build():
-        ## test usage
-        #var txt = "[Good]. Let's see... [your selection requires] one pound of [human] kidney, half a pound of [human] heart and two pounds of [human] liver. "
-#
-        #var s = State.new()
-        #queue_text(s.get_richtext_textstr(txt))
-#
-        #queue_text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
-        #queue_text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ")
-        #queue_text("Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ")
-        #queue_text("Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-        #queue_text("The end.")
 
 
 func on_mouse_entered() -> void:
@@ -47,11 +39,16 @@ func on_mouse_exited() -> void:
 func _process(delta: float) -> void:
     match current_state:
         TextBoxState.READY:
-            end_animation.stop()
+            print("here")
+            if end_animation.is_playing():
+                end_animation.stop()
+            print("here1")
             if !text_queue.is_empty():
+                print("here2")
                 display_text()
         TextBoxState.READING:
-            end_animation.stop()
+            if end_animation.is_playing():
+                end_animation.stop()
             if (hovering and Input.is_action_just_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
                 text_label.visible_ratio = 1.0
                 if cur_tween:
@@ -99,4 +96,5 @@ func change_state(next_state: TextBoxState) -> void:
         TextBoxState.READING:
             print("[DEBUG MSG] Changing state to: State.READING")
         TextBoxState.FINISHED:
+            text_finished.emit()
             print("[DEBUG MSG] Changing state to: State.FINISHED")

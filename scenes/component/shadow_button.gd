@@ -2,7 +2,6 @@ extends Control
 
 class_name ShadowButton
 
-signal next_state(state_id)
 @onready var button = $Button
 @onready var shadow = $Shadow
 @onready var animation_player = $AnimationPlayer
@@ -53,7 +52,6 @@ func _process(delta: float) -> void:
             shadow.visible = false
             cur_state = State.READY
         else:
-            print("actually pressed")
-            next_state.emit(next_state_id)
+            Autoload.emit_transition_to(next_state_id)
             cur_state = State.HOVER
             animation_player.play("on_hover")

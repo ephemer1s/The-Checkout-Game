@@ -26,8 +26,8 @@ func load_json(filePath: String)-> Dictionary:
         if dataParsed is Dictionary:
             if OS.is_debug_build():
                 print("[DEBUG MSG] loaded file to parser:")
-                itemData = dataParsed
-                return dataParsed
+            itemData = dataParsed
+            return dataParsed
         else:
             print("[ERROR] Error loading file to parser:", filePath)
 

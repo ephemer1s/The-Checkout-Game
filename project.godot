@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GodotLogger="*res://addons/logger/logger.gd"
 Parser="*res://scenes/state_machine/parser.gd"
+Autoload="*res://scenes/autoload.tscn"
 
 [display]
 
