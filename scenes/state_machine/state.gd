@@ -25,6 +25,8 @@ func enter(_state_id: int, _state_machine: StateMachine, _parser: JSONParser) ->
 
         state_machine.owner.demon.reset_hand_scale()
         if animation["demon"] == 'appear':
+            Audio.switch_bgm("demon")
+            Audio.get_node("sfx_demon_ambient").play()
             state_machine.owner.demon.appear()
             state_machine.owner.demon.hide_heart_and_soul()
             state_machine.owner.text_box.enable_shadow()
@@ -108,7 +110,6 @@ func get_richtext_textstr(text, theme="shop") -> String:
 func get_animation_type_dict() -> String:
     return parser.itemData["content"]["animation"]
 
-#TODO: enable this when the key "background" added to json
 #func get_background -> String:
     #return parser.itemData["content"]["background"]
 

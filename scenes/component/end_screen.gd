@@ -14,11 +14,13 @@ func _ready() -> void:
 func play_end(end_name: String) -> void:
     achievement_box.set_achievement(end_name)
     if end_name == "summoning":
+        Audio.get_node("sfx_ending_summoning").play()
         true_end.visible = true
         true_end.play("default")
         await true_end.animation_finished
         true_end.play("repeat")
     else:
+        Audio.get_node("sfx_demon_laughter").play()
         end.visible = true
         end.play(end_name)
     animation_player.play("show_achivement")

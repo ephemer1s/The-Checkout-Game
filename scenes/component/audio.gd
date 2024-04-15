@@ -5,12 +5,16 @@ extends AudioStreamPlayer
 #@onready var bgmplayer_demon = AudioStreamPlayer.new()
 #@onready var bgmplayer_demon2 = AudioStreamPlayer.new()
 @onready var dummy_player = AudioStreamPlayer.new()
+@onready var bgmshop = load("res://assets/sfx/shop_bgm.mp3")
+@onready var bgmdemon = load("res://assets/sfx/demon_bgm.mp3")
+@onready var bgmambient = load("res://assets/sfx/demon_ambient.mp3")
 var fading = false
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
     add_child(dummy_player)
-    play_bgm("res://assets/sfx/shop_bgm.mp3")
+    play_bgm("shop")
     
     #bgmplayer_shop.stream = load("res://assets/sfx/shop_bgm.mp3")
     #bgmplayer_demon.stream = load("res://assets/sfx/demon_bgm.mp3")
@@ -20,16 +24,22 @@ func _ready():
     #bgmplayer_shop.play()
     pass
 
-func play_bgm(filepath) -> void:
+func play_bgm(song) -> void:
     ''' hard cut, play designated bgm directly
     '''
-    stream = load(filepath)
+    if song == "shop":
+        stream = bgmshop
+    elif song == "demon":
+        stream = bgmdemon
     play()
 
-func switch_bgm(filepath) -> void:
+func switch_bgm(song) -> void:
     ''' fade in & out, play designated bgm with fading
     '''
-    dummy_player.stream = load(filepath)
+    if song == "shop":
+        dummy_player.stream = bgmshop
+    elif song == "demon":
+        dummy_player.stream = bgmdemon
     dummy_player.volume_db = -60
     dummy_player.play()
     fading = true

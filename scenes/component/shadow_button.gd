@@ -32,6 +32,7 @@ func on_mouse_entered() -> void:
     shadow.visible = true
     is_hovering = true
     if cur_state == State.READY:
+        Audio.get_node("sfx_button_highlight").play()
         animation_player.play("on_hover")
         cur_state = State.HOVER
 
@@ -68,9 +69,11 @@ func setup_button(text: String, _next_state_id: int, _money_action: String) -> v
 func _process(delta: float) -> void:
     if cur_state == State.HOVER and Input.is_action_just_pressed("confirm"):
         animation_player.play("on_click")
+        Audio.get_node("sfx_button_click").play()
         cur_state = State.PRESSED
     elif cur_state == State.PRESSED and Input.is_action_just_released("confirm"):
         animation_player.play("on_release")
+        Audio.get_node("sfx_button_click").play()
         if !is_hovering:
             shadow.visible = false
             cur_state = State.READY
