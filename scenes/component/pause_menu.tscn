@@ -52,5 +52,7 @@ layout_mode = 2
 theme = ExtResource("1_hntjk")
 text = "Main Menu"
 
+[connection signal="mouse_entered" from="VBoxContainer/Resume" to="." method="_on_resume_mouse_entered"]
 [connection signal="pressed" from="VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Main Menu" to="." method="_on_main_menu_mouse_entered"]
 [connection signal="pressed" from="VBoxContainer/Main Menu" to="." method="_on_main_menu_pressed"]

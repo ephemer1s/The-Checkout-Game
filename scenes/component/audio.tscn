@@ -1,0 +1,40 @@
+[gd_scene load_steps=10 format=3 uid="uid://b3o5vrst0lop1"]
+
+[ext_resource type="Script" path="res://scenes/component/audio.gd" id="1_8lb5c"]
+[ext_resource type="AudioStream" uid="uid://b8skoq3gbbx8s" path="res://assets/sfx/shop_bgm.mp3" id="2_wvlfc"]
+[ext_resource type="AudioStream" uid="uid://bdyhlmdlujeof" path="res://assets/sfx/button_highlight.mp3" id="3_goql2"]
+[ext_resource type="AudioStream" uid="uid://3kkwcbon16en" path="res://assets/sfx/button_click.mp3" id="4_sj083"]
+[ext_resource type="AudioStream" uid="uid://ckeqaxawcnkbx" path="res://assets/sfx/demon_ambient.mp3" id="5_wu2pm"]
+[ext_resource type="AudioStream" uid="uid://r1yx3wruomo2" path="res://assets/sfx/demon_laughter.mp3" id="6_5tp1i"]
+[ext_resource type="AudioStream" uid="uid://dvrnhtc7kfl37" path="res://assets/sfx/demon_bgm.mp3" id="7_281p2"]
+[ext_resource type="AudioStream" uid="uid://bocyhuba5fyv4" path="res://assets/sfx/horror-sfx-3-103708.mp3" id="8_cj4o8"]
+[ext_resource type="AudioStream" uid="uid://ck1n45lw3p8so" path="res://assets/sfx/ending_summoning.mp3" id="9_lhsqg"]
+
+[node name="Audio" type="Node"]
+process_mode = 3
+script = ExtResource("1_8lb5c")
+
+[node name="sfx_shop_bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_wvlfc")
+
+[node name="sfx_button_highlight" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_goql2")
+volume_db = -15.0
+
+[node name="sfx_button_click" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_sj083")
+
+[node name="sfx_demon_ambient" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_wu2pm")
+
+[node name="sfx_demon_laughter" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_5tp1i")
+
+[node name="bgm_demon" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_281p2")
+
+[node name="sfx_horror" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_cj4o8")
+
+[node name="sfx_ending_summoning" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_lhsqg")
