@@ -18,13 +18,13 @@ func _on_resume_pressed():
     #get_tree().paused = false
     #visible = false
     Audio.get_node("sfx_button_click").play()
-    
+
     self.is_paused = false
 
 func _on_main_menu_pressed():
     print("return to menu")
     Audio.get_node("sfx_button_click").play()
-    
+
     get_tree().paused = false
     get_tree().change_scene_to_file("res://scenes/main/main-menu.tscn")
 

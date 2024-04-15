@@ -20,7 +20,7 @@ func _process(delta):
 
 #func start_game():
     #get_tree().change_scene_to_packed(game)
-    
+
 
 func _on_btn_new_game_pressed():
     if OS.is_debug_build():
