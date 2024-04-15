@@ -87,8 +87,8 @@ func change_state(next_state: TextBoxState) -> void:
     current_state = next_state
     match current_state:
         TextBoxState.READY:
-            print("Changing state to: State.READY")
+            print("[DEBUG MSG] Changing state to: State.READY")
         TextBoxState.READING:
-            print("Changing state to: State.READING")
+            print("[DEBUG MSG] Changing state to: State.READING")
         TextBoxState.FINISHED:
-            print("Changing state to: State.FINISHED")
+            print("[DEBUG MSG] Changing state to: State.FINISHED")
