@@ -5,7 +5,7 @@ var is_paused = false:
         is_paused = value
         get_tree().paused = is_paused
         visible = is_paused
-    
+
 func _unhandled_input(event):
     if event.is_action_pressed("pause"):
         #get_tree().paused = !get_tree().paused
@@ -20,7 +20,7 @@ func _on_resume_pressed():
     Audio.get_node("sfx_button_click").play()
     
     self.is_paused = false
-    
+
 func _on_main_menu_pressed():
     print("return to menu")
     Audio.get_node("sfx_button_click").play()

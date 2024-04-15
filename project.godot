@@ -13,7 +13,8 @@ config_version=5
 config/name="gamejam-temp"
 run/main_scene="res://scenes/root.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://assets/game.png"
+config/windows_native_icon="res://game.ico"
 
 [autoload]
 

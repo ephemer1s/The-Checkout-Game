@@ -42,7 +42,7 @@
 [ext_resource type="Texture2D" uid="uid://dpsb1faamojyr" path="res://assets/card_reader.png" id="28_ircbg"]
 [ext_resource type="Texture2D" uid="uid://cmyudfiwvatp2" path="res://assets/console.png" id="28_j7vh4"]
 [ext_resource type="Texture2D" uid="uid://cq1srq46qnvvn" path="res://assets/poster_1.png" id="29_36rd7"]
-[ext_resource type="FontFile" uid="uid://wl7lycn2oxio" path="res://assets/fonts/Myhandwriting-Regular.ttf" id="43_cekij"]
+[ext_resource type="FontFile" uid="uid://wl7lycn2oxio" path="res://assets/fonts/Myhandwriting-Regular.ttf" id="43_o3yw4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_606nt"]
 animations = [{
@@ -276,7 +276,7 @@ offset_right = 65.75
 offset_bottom = 34.0
 rotation = -0.0469154
 theme_override_colors/font_color = Color(0.152941, 0.152941, 0.152941, 1)
-theme_override_fonts/font = ExtResource("43_cekij")
+theme_override_fonts/font = ExtResource("43_o3yw4")
 theme_override_font_sizes/font_size = 56
 text = "30.45
 "
