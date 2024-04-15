@@ -11,11 +11,11 @@ var bodiless_icon: Texture2D = preload("res://assets/end_bodiless.png")
 var soulless_icon: Texture2D = preload("res://assets/end_soulless.png")
 var depleted_icon: Texture2D = preload("res://assets/end_depleted.png")
 var summoning_icon: Texture2D = preload("res://assets/end_true.png")
+var hidden_icon: Texture2D = preload("res://assets/end_true.png")
 
 func _ready() -> void:
     title.text = ""
     description.text = ""
-    set_achievement("mindless")
 
 
 func set_achievement(ending: String) -> void:
@@ -47,5 +47,8 @@ func set_achievement(ending: String) -> void:
         title.text = "ENDING # 1 - THE SUMMONING"
         description.text = "what beauty."
         icon.texture = summoning_icon
+    elif ending == "hidden":
+        title.text = "HIDDEN ACHIEVEMENT"
+        description.text = "???"
     else:
         print("wtf, ", ending)
