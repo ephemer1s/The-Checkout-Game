@@ -9,7 +9,7 @@ var parser: JSONParser
 func enter() -> void:
     parser.parse(state_id)
     var animation = parser.itemData["content"]["animation"]
-    
+
     state_machine.owner.face_animation_player.play(animation["face"])
     state_machine.owner.body_animation_player.play(animation["body"])
     state_machine.owner.logo_animation_player.play(animation["logo"])
@@ -44,17 +44,17 @@ func get_illegible_text() -> Array[String]:
     '''
     var shop_text = get_shop_text()
     var demonic_text = get_demonic_text()
-    
+
     var regex = RegEx.new()
     regex.compile("\\[[^\\]]*\\]")
-    
-    var shop_mosaic = regex.search(shop_text).get_strings() 
+
+    var shop_mosaic = regex.search(shop_text).get_strings()
     var demonic_mosaic = regex.search(demonic_text).get_strings()
-    
+
     if OS.is_debug_build():
         print("[DEBUG MSG] matched mosaic text list:")
         print(shop_mosaic, demonic_mosaic)
-        
+
     return [shop_mosaic, demonic_mosaic]
 
 
@@ -72,8 +72,8 @@ func get_richtext_textstr(text, theme="shop") -> String:
             richtxt += ch
     richtxt += "[/shake]"
     return richtxt
-    
-    
+
+
 func get_animation_type_dict() -> String:
     return parser.itemData["content"]["animation"]
 

@@ -23,14 +23,14 @@ func queue_text(next_text):
 func _ready():
     margin_container.connect("mouse_entered", on_mouse_entered)
     margin_container.connect("mouse_exited", on_mouse_exited)
-    
+
     if OS.is_debug_build():
         # test usage
         var txt = "[Good]. Let's see... [your selection requires] one pound of [human] kidney, half a pound of [human] heart and two pounds of [human] liver. "
 
         var s = State.new()
         queue_text(s.get_richtext_textstr(txt))
-        
+
         queue_text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
         queue_text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ")
         queue_text("Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ")
@@ -39,6 +39,7 @@ func _ready():
 
 
 func on_mouse_entered() -> void:
+    print("here???")
     hovering = true
 
 func on_mouse_exited() -> void:
@@ -52,14 +53,14 @@ func _process(delta: float) -> void:
                 display_text()
         TextBoxState.READING:
             end_animation.stop()
-            if (hovering and Input.is_action_just_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
+            if (hovering and Input.is_action_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
                 text_label.visible_ratio = 1.0
                 if cur_tween:
                     cur_tween.kill()
                 change_state(TextBoxState.FINISHED)
                 on_tween_completed()
         TextBoxState.FINISHED:
-            if (hovering and Input.is_action_just_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
+            if (hovering and Input.is_action_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
                 change_state(TextBoxState.READY)
 
 

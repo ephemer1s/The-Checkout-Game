@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://dbf4jqkhmg2o6"]
 
 [ext_resource type="Script" path="res://scenes/component/text_box.gd" id="1_jcp55"]
-[ext_resource type="Theme" uid="uid://b2dqyjfm40jfq" path="res://resources/themes/tbox-normal-content.tres" id="2_mgqya"]
+[ext_resource type="Theme" path="res://resources/themes/tbox-normal-content.tres" id="2_mgqya"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n2ilk"]
 bg_color = Color(0.160784, 0.160784, 0.160784, 1)

@@ -12,12 +12,14 @@ grow_vertical = 2
 script = ExtResource("1_mr0wr")
 
 [node name="BackgroundWhite" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = -1000.0
 offset_top = -500.0
 offset_right = 3000.0
 offset_bottom = 1500.0
 
 [node name="PlaceHolderText" type="RichTextLabel" parent="."]
+layout_mode = 0
 offset_left = 386.0
 offset_top = 127.0
 offset_right = 744.0
@@ -26,6 +28,7 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER PLACEHOLDER "
 
 [node name="BtnBack" type="Button" parent="."]
+layout_mode = 0
 offset_left = 552.0
 offset_top = 568.0
 offset_right = 602.0
