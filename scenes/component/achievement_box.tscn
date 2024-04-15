@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/component/achievement_box.gd" id="1_ie6fn"]
 [ext_resource type="Texture2D" uid="uid://dehnk3wcq1ajd" path="res://assets/ui/UI_bubble01.png" id="1_qdoa7"]
 [ext_resource type="Texture2D" uid="uid://b5vv0pfi740do" path="res://assets/ui/UI_square.png" id="2_ooi4y"]
-[ext_resource type="Texture2D" uid="uid://n8rym13ssyr1" path="res://assets/inv_card.png" id="3_52rsl"]
+[ext_resource type="Texture2D" uid="uid://burrmgr6vuk6o" path="res://assets/inv_card.png" id="3_52rsl"]
 [ext_resource type="Theme" uid="uid://b2dqyjfm40jfq" path="res://resources/themes/tbox-normal-content.tres" id="4_oxnis"]
 
 [node name="AchievementBox" type="Control"]
