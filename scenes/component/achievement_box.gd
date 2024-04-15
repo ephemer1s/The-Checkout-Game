@@ -17,7 +17,6 @@ func _ready() -> void:
     title.text = ""
     description.text = ""
 
-
 func set_achievement(ending: String) -> void:
     if ending == "ignorant":
         title.text = "ENDING # 7 - THE IGNORANT"

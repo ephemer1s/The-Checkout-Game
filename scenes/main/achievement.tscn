@@ -8,6 +8,12 @@
 [node name="Achievement" type="CanvasLayer"]
 script = ExtResource("1_fhk12")
 
+[node name="BackgroundWhite" type="ColorRect" parent="."]
+offset_left = -1000.0
+offset_top = -500.0
+offset_right = 3000.0
+offset_bottom = 1500.0
+
 [node name="MarginContainerLeft" type="MarginContainer" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
