@@ -33,9 +33,9 @@
       {
         "id": 3,
         "tooltip": "add money",
-        "money": 6.66,
-        "desc": "\"Yes. I'll make a $6.66 donation.\"",
-        "next": 70
+        "money": 66.6,
+        "desc": "\"Yes. I'll make a $66.6 donation.\"",
+        "next": 106
       },
       {
         "id": 4,
