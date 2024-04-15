@@ -10,12 +10,9 @@
 [ext_resource type="AudioStream" uid="uid://bocyhuba5fyv4" path="res://assets/sfx/horror-sfx-3-103708.mp3" id="8_cj4o8"]
 [ext_resource type="AudioStream" uid="uid://ck1n45lw3p8so" path="res://assets/sfx/ending_summoning.mp3" id="9_lhsqg"]
 
-[node name="Audio" type="Node"]
+[node name="Audio" type="AudioStreamPlayer"]
 process_mode = 3
 script = ExtResource("1_8lb5c")
-
-[node name="sfx_shop_bgm" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_wvlfc")
 
 [node name="sfx_button_highlight" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_goql2")
@@ -29,6 +26,9 @@ stream = ExtResource("5_wu2pm")
 
 [node name="sfx_demon_laughter" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_5tp1i")
+
+[node name="bgm_shop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_wvlfc")
 
 [node name="bgm_demon" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_281p2")

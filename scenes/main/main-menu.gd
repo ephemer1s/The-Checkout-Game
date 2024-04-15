@@ -10,6 +10,8 @@ var game: PackedScene = preload("res://scenes/story/story.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
     #$VBoxContainer/BtnNewGame.grab_focus()
+    #Audio.stream = load("res://assets/sfx/shop_bgm.mp3")
+    #Audio.play()
     pass # Replace with function body.
 
 
