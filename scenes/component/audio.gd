@@ -9,6 +9,7 @@ extends AudioStreamPlayer
 @onready var bgmdemon = load("res://assets/sfx/demon_bgm.mp3")
 @onready var bgmambient = load("res://assets/sfx/demon_ambient.mp3")
 var fading = false
+var offset = -15
 
 
 # Called when the node enters the scene tree for the first time.
@@ -31,6 +32,7 @@ func play_bgm(song) -> void:
         stream = bgmshop
     elif song == "demon":
         stream = bgmdemon
+    volume_db = 0 + offset
     play()
 
 func switch_bgm(song) -> void:
@@ -40,7 +42,7 @@ func switch_bgm(song) -> void:
         dummy_player.stream = bgmshop
     elif song == "demon":
         dummy_player.stream = bgmdemon
-    dummy_player.volume_db = -60
+    dummy_player.volume_db = -60 + offset
     dummy_player.play()
     fading = true
 
@@ -50,9 +52,9 @@ func _process(delta):
         volume_db -= 15 * delta
         dummy_player.volume_db += 15 * delta
         
-        if dummy_player.volume_db >= 0:
-            volume_db = 0
-            dummy_player.volume_db = -60
+        if dummy_player.volume_db >= 0 + offset:
+            volume_db = 0 + offset
+            dummy_player.volume_db = -60 + offset
             stream = dummy_player.stream
             play(dummy_player.get_playback_position())
             
