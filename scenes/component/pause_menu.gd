@@ -5,7 +5,7 @@ var is_paused = false:
         is_paused = value
         get_tree().paused = is_paused
         visible = is_paused
-    
+
 func _unhandled_input(event):
     if event.is_action_pressed("pause"):
         #get_tree().paused = !get_tree().paused
@@ -13,13 +13,9 @@ func _unhandled_input(event):
         self.is_paused = !is_paused
 
 func _on_resume_pressed():
-    print("resume")
-    #get_tree().paused = false
-    #visible = false
     self.is_paused = false
-    
+
 func _on_main_menu_pressed():
-    print("return to menu")
     get_tree().paused = false
     get_tree().change_scene_to_file("res://scenes/main/main-menu.tscn")
 

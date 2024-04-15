@@ -27,6 +27,7 @@ func enter(_state_id: int, _state_machine: StateMachine, _parser: JSONParser) ->
         if animation["demon"] == 'appear':
             state_machine.owner.demon.appear()
             state_machine.owner.demon.hide_heart_and_soul()
+            state_machine.owner.text_box.enable_shadow()
         elif animation["hand"] == "heartandsoul":
             state_machine.owner.demon.play_heart_and_soul_animation()
         else:

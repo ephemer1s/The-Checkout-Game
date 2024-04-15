@@ -29,7 +29,7 @@ func queue_text(next_text):
 func _ready():
     margin_container.connect("mouse_entered", on_mouse_entered)
     margin_container.connect("mouse_exited", on_mouse_exited)
-
+    disable_shadow()
 
 func on_mouse_entered() -> void:
     hovering = true
@@ -57,6 +57,11 @@ func _process(delta: float) -> void:
             if (hovering and Input.is_action_just_pressed("confirm")) or Input.is_action_just_pressed("keyboard_confirm"):
                 change_state(TextBoxState.READY_FOR_NEXT)
 
+func enable_shadow() -> void:
+    text_label.add_theme_color_override("font_shadow_color", Color(0.435, 0, 0))
+
+func disable_shadow() -> void:
+    text_label.add_theme_color_override("font_shadow_color", Color(0, 0, 0))
 
 func clear_textbox() -> void:
     text_label.text = ""
@@ -96,8 +101,11 @@ func change_state(next_state: TextBoxState) -> void:
             pass
             #print("[DEBUG MSG] Changing state to: State.READING")
         TextBoxState.FINISHED:
-            pass
+            if end_label.visible == false:
+                end_animation.play("triangle")
             #print("[DEBUG MSG] Changing state to: State.FINISHED")
         TextBoxState.READY_FOR_NEXT:
+            if end_label.visible == false:
+                end_animation.play("triangle")
             #print("[DEBUG MSG] Changing state to: State.READY_FOR_NEXT")
             text_finished.emit()

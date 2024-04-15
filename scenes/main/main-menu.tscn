@@ -1,9 +1,77 @@
-[gd_scene load_steps=5 format=3 uid="uid://cksr53184nn1l"]
+[gd_scene load_steps=15 format=3 uid="uid://cksr53184nn1l"]
 
 [ext_resource type="Script" path="res://scenes/main/main-menu.gd" id="1_eybd6"]
 [ext_resource type="Theme" uid="uid://cmsoegrpc20f2" path="res://resources/themes/title-mainmenu.tres" id="2_ek5ly"]
-[ext_resource type="Texture2D" uid="uid://burrmgr6vuk6o" path="res://assets/inv_card.png" id="3_07r3i"]
+[ext_resource type="Texture2D" uid="uid://n8rym13ssyr1" path="res://assets/inv_card.png" id="3_07r3i"]
 [ext_resource type="Theme" uid="uid://costme5i3h772" path="res://resources/themes/btn-mainmenu.tres" id="3_d4rs5"]
+[ext_resource type="Texture2D" uid="uid://b3khvs2kesice" path="res://assets/title_1.png" id="4_hdtur"]
+[ext_resource type="Texture2D" uid="uid://b35ap2gbjq277" path="res://assets/title_2.png" id="5_86a3t"]
+[ext_resource type="Texture2D" uid="uid://bmg3lkyubsc85" path="res://assets/title_3.png" id="6_i5w1e"]
+[ext_resource type="Texture2D" uid="uid://c03wev7jltuve" path="res://assets/title_4.png" id="7_g3v1d"]
+[ext_resource type="Texture2D" uid="uid://dxhrej80s0pmb" path="res://assets/title_5.png" id="8_k6ed5"]
+[ext_resource type="Texture2D" uid="uid://djeamcps1kgbx" path="res://assets/title_6.png" id="9_22gfv"]
+[ext_resource type="Texture2D" uid="uid://c7kd68kiebxvy" path="res://assets/title_7.png" id="10_hjtxt"]
+[ext_resource type="Texture2D" uid="uid://dvu2w1aogge7m" path="res://assets/title_8.png" id="11_xg870"]
+[ext_resource type="Texture2D" uid="uid://bfyq0p6gwqoon" path="res://assets/title_9.png" id="12_wa7wv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tftj2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_hdtur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_86a3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i5w1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_g3v1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_k6ed5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_22gfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hjtxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xg870")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wa7wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xg870")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hjtxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_22gfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_k6ed5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_g3v1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i5w1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_86a3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hdtur")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -32,7 +100,7 @@ offset_bottom = 588.0
 [node name="Title" type="Label" parent="MarginContainer"]
 layout_mode = 2
 theme = ExtResource("2_ek5ly")
-text = "CHECKOUT"
+text = "THE CHECKOUT"
 
 [node name="MarginContainer2" type="MarginContainer" parent="."]
 layout_mode = 0
@@ -43,8 +111,15 @@ offset_bottom = 550.0
 scale = Vector2(1.1, 1.1)
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer2"]
+visible = false
 layout_mode = 2
 texture = ExtResource("3_07r3i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer2"]
+position = Vector2(610, 290)
+sprite_frames = SubResource("SpriteFrames_tftj2")
+autoplay = "default"
+frame_progress = 0.295766
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1

@@ -1,8 +1,8 @@
 [gd_scene load_steps=15 format=3 uid="uid://bgkdeoex5wmkq"]
 
-[ext_resource type="FontFile" uid="uid://dvbojmbgqxxnr" path="res://assets/fonts/SueEllenFrancisco-Regular.ttf" id="1_dgeac"]
 [ext_resource type="Script" path="res://scenes/component/shadow_button.gd" id="1_vgfvu"]
-[ext_resource type="StyleBox" path="res://resources/themes/btn-for-option.tres" id="2_g7jku"]
+[ext_resource type="StyleBox" uid="uid://bqw1yxunax0h2" path="res://resources/themes/btn-for-option.tres" id="2_g7jku"]
+[ext_resource type="FontFile" uid="uid://dvbojmbgqxxnr" path="res://assets/fonts/SueEllenFrancisco-Regular.ttf" id="2_i77e3"]
 [ext_resource type="Shader" path="res://scenes/component/Inventory/inventory.gdshader" id="2_nigqt"]
 [ext_resource type="Shader" path="res://scenes/component/shadow_button.gdshader" id="5_4w86c"]
 
@@ -15,7 +15,7 @@ shader_parameter/modulate = null
 [sub_resource type="Theme" id="Theme_0r6g4"]
 Button/colors/font_color = Color(0, 0, 0, 1)
 Button/font_sizes/font_size = 32
-Button/fonts/font = ExtResource("1_dgeac")
+Button/fonts/font = ExtResource("2_i77e3")
 Button/styles/disabled = ExtResource("2_g7jku")
 Button/styles/focus = ExtResource("2_g7jku")
 Button/styles/hover = ExtResource("2_g7jku")
