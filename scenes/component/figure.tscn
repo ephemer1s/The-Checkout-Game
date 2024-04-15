@@ -226,14 +226,14 @@ position = Vector2(1, 0)
 script = ExtResource("1_isves")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(319, 392)
+position = Vector2(327, 424)
 texture = ExtResource("2_1n70x")
 
 [node name="Body" type="AnimatedSprite2D" parent="."]
 position = Vector2(672, 651)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_606nt")
-animation = &"handling"
+animation = &"donation"
 
 [node name="Logo" type="AnimatedSprite2D" parent="."]
 position = Vector2(736, 736)
@@ -248,7 +248,7 @@ sprite_frames = SubResource("SpriteFrames_qsv7d")
 animation = &"shock"
 
 [node name="Midground" type="Sprite2D" parent="."]
-position = Vector2(314, 872)
+position = Vector2(327, 872)
 scale = Vector2(0.7, 0.7)
 texture = ExtResource("27_8ydmu")
 

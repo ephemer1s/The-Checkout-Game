@@ -11,9 +11,9 @@
       "mask": "default"
     },
     "description": {
-      "tooltip": "Good. Let's see... [you have bought] one pound of [pork] kidney, half a pound of [chicken] hearts and two pounds of [beef] liver.",
-      "desc_shop": "Good. Let's see... [you have bought] one pound of [pork] kidney, half a pound of [chicken] hearts and two pounds of [beef] liver.",
-      "desc_demonic": "Good. Let's see... [your selection requires] one pound of [human] kidney, half a pound of [human] hearts and two pounds of [human] liver."
+      "tooltip": "Good. Let's see... you have [bought] one pound of [pork] kidney, half a pound of [chicken] hearts and two pounds of [beef] liver.",
+      "desc_shop": "Good. Let's see... you have [bought] one pound of [pork] kidney, half a pound of [chicken] hearts and two pounds of [beef] liver.",
+      "desc_demonic": "Good. Let's see... you have [brought] one pound of [human] kidney, half a pound of [human] hearts and two pounds of [human] liver."
     },
     "option": [
       {

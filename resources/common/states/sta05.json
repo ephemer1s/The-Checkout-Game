@@ -12,8 +12,8 @@
     },
     "description": {
       "tooltip": "I see that you have brought your own bag.  So there's no need to purchase that.",
-      "desc_shop": "I see that you have brought your own bag.  So there's no need to purchase that.",
-      "desc_demonic": "I see that you have brought your own bag. So there's no need to purchase that."
+      "desc_shop": "I see that you have brought your own bag.  So there's no need to [purchase] that.",
+      "desc_demonic": "I see that you have brought your own bag. So there's no need to [purchase] that."
     },
     "option": [
       {

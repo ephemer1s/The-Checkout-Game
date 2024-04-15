@@ -12,8 +12,8 @@
     },
     "description": {
       "tooltip": "How would you like to pay today?",
-      "desc_shop": "How would you like to pay today?",
-      "desc_demonic": "How would you like to pay today?"
+      "desc_shop": "How would you like to [pay] today?",
+      "desc_demonic": "How would you like to [pay] today?"
     },
     "option": [
       {

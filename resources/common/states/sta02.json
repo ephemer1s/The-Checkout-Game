@@ -12,8 +12,8 @@
     },
     "description": {
       "tooltip": "",
-      "desc_shop": "Well..OK. Did you find what you're looking for?",
-      "desc_demonic": "Heh..Greetings. Did you find what you're looking for?"
+      "desc_shop": "[Well]..[OK]. Did you find what you're looking for?",
+      "desc_demonic": "[Heh]..[Greetings]. Did you find what you're looking for?"
     },
     "option": [
       {

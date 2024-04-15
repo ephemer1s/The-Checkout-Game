@@ -11,9 +11,9 @@
       "mask": "default"
     },
     "description": {
-      "tooltip": "Got it. Your [here is your add  total]. ",
-      "desc_shop": "Got it. Your [here is your current total]. ",
-      "desc_demonic": "Got it. Your [contract is almost ready]."
+      "tooltip": "",
+      "desc_shop": "Got it. Your [total is here]. ",
+      "desc_demonic": "Got it. Your [contract is ready]."
     },
     "option": [
       {

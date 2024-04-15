@@ -11,9 +11,9 @@
       "mask": "default"
     },
     "description": {
-      "tooltip": "Would you like to [make a donation] along with your [purchase] today? That'd make you eligible for [the promotion we are running now]!",
-      "desc_shop": "Would you like to [make a donation] along with your [purchase] today? That'd make you eligible for [the promotion we are running now]!",
-      "desc_demonic": "Would you like to [add some of your own blood] along with your [deal] today? That'd make you eligible for [a stronger bond with the demon]!"
+      "tooltip": "Would you like to make a [donation] along with your [purchase] today? That'd make you eligible for [the promotion we are running now]!",
+      "desc_shop": "Would you like to make a [donation] along with your [purchase] today? That'd make you eligible for [the promotion we are running now]!",
+      "desc_demonic": "Would you like to make a [tribute] along with your [deal] today? That'd make you eligible for [a stronger bond with the demon]!"
     },
     "option": [
       {

@@ -11,9 +11,9 @@
       "mask": "laugh"
     },
     "description": {
-      "tooltip": "[OK]. [Swipe your credit card] when ready. ",
-      "desc_shop": "[OK]. [Swipe your credit card] when ready. ",
-      "desc_demonic": "[OK]. [Give me your hand] when ready. "
+      "tooltip": "OK. [Swipe] your [credit card] when ready. ",
+      "desc_shop": "OK. [Swipe] your [credit card] when ready. ",
+      "desc_demonic": "OK. [Put] your [hand here] when ready. "
     },
     "option": [
       {

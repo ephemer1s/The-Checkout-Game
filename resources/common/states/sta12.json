@@ -12,8 +12,8 @@
     },
     "description": {
       "tooltip": "Sorry, seems like that name isn't in our system.",
-      "desc_shop": "Sorry, seems like that name isn't in our system.",
-      "desc_demonic": "Sorry, seems like that name isn't in our system."
+      "desc_shop": "[Sorry], seems like that name isn't in our system.",
+      "desc_demonic": "[Sorry], seems like that name isn't in our system."
     },
     "option": [
       {
