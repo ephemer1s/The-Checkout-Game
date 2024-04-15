@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=3 uid="uid://cwcaiev610pd0"]
+[gd_scene load_steps=43 format=3 uid="uid://cwcaiev610pd0"]
 
 [ext_resource type="Script" path="res://scenes/component/demon.gd" id="1_xwwdn"]
 [ext_resource type="Texture2D" uid="uid://c46f8bqfitfcs" path="res://assets/demon_1.png" id="2_7w5ee"]
@@ -13,12 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://b3cdpy1061mhn" path="res://assets/mask_shock_1.png" id="11_j532m"]
 [ext_resource type="Texture2D" uid="uid://c3lttnrtc216q" path="res://assets/mask_shock_2.png" id="12_mau7q"]
 [ext_resource type="Texture2D" uid="uid://d060siwey5rf4" path="res://assets/mask_shock_3.png" id="13_le4gu"]
-[ext_resource type="Texture2D" uid="uid://bouq6q1r105ji" path="res://assets/hand_blood_1.png" id="14_ttph3"]
-[ext_resource type="Texture2D" uid="uid://xxlx5svoqetu" path="res://assets/hand_blood_2.png" id="15_nnvfa"]
-[ext_resource type="Texture2D" uid="uid://bqdop5y683n2a" path="res://assets/hand_blood_3.png" id="16_ggvq2"]
-[ext_resource type="Texture2D" uid="uid://ccvejlhby26hn" path="res://assets/hand_contract_1.png" id="17_qlb6j"]
-[ext_resource type="Texture2D" uid="uid://c4dt3kxtt855f" path="res://assets/hand_contract_2.png" id="18_rc2cw"]
-[ext_resource type="Texture2D" uid="uid://cjil367oatlna" path="res://assets/hand_contract_3.png" id="19_ceud8"]
 [ext_resource type="Texture2D" uid="uid://b4xbd7j2ycku6" path="res://assets/blank_for_the_blank_god.png" id="20_h6ufd"]
 [ext_resource type="Texture2D" uid="uid://c5ge103ol8qjl" path="res://assets/transition_1.png" id="20_imj0e"]
 [ext_resource type="Texture2D" uid="uid://dtrgcjpu85vaq" path="res://assets/hand_open_1.png" id="20_ovjdb"]
@@ -32,8 +26,14 @@
 [ext_resource type="Texture2D" uid="uid://byscnwo1b8b15" path="res://assets/transition_7.png" id="26_yjxny"]
 [ext_resource type="Texture2D" uid="uid://eyu3unnp2dpk" path="res://assets/transition_8.png" id="27_ab6lh"]
 [ext_resource type="Texture2D" uid="uid://cbexlbtv8i5pn" path="res://assets/transition_9.png" id="28_ace1g"]
+[ext_resource type="Texture2D" uid="uid://svsl54yhrp2y" path="res://assets/soul_1.png" id="29_6vr7h"]
 [ext_resource type="Texture2D" uid="uid://rf6j2n7dqwpa" path="res://assets/transition_10.png" id="29_qxrmf"]
+[ext_resource type="Texture2D" uid="uid://4yobl68bb63w" path="res://assets/flesh_1.png" id="29_som4r"]
+[ext_resource type="Texture2D" uid="uid://pahst8kfribn" path="res://assets/flesh_2.png" id="30_e11b2"]
 [ext_resource type="Texture2D" uid="uid://f0qjrwpg70d2" path="res://assets/transition_11.png" id="30_hix31"]
+[ext_resource type="Texture2D" uid="uid://0haaf0d880yb" path="res://assets/soul_2.png" id="30_u35js"]
+[ext_resource type="Texture2D" uid="uid://bnk21n8b2hmim" path="res://assets/flesh_3.png" id="31_eio2h"]
+[ext_resource type="Texture2D" uid="uid://cvq2c68is06vu" path="res://assets/soul_3.png" id="31_weucu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_606nt"]
 animations = [{
@@ -101,34 +101,6 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("14_ttph3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_nnvfa")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_ggvq2")
-}],
-"loop": true,
-"name": &"blood",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("17_qlb6j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_rc2cw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_ceud8")
-}],
-"loop": true,
-"name": &"contract",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": ExtResource("20_h6ufd")
 }],
 "loop": true,
@@ -137,13 +109,13 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("20_ovjdb")
-}, {
-"duration": 1.0,
 "texture": ExtResource("21_ps7bu")
 }, {
 "duration": 1.0,
 "texture": ExtResource("22_u7fr6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ovjdb")
 }],
 "loop": true,
 "name": &"open",
@@ -191,6 +163,74 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="Animation" id="Animation_p20pt"]
+resource_name = "default"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.75, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1719, 619), Vector2(1719, 600), Vector2(1719, 640)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../Heart:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.75, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1426, 663), Vector2(1426, 680), Vector2(1426, 640)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e8qij"]
+_data = {
+"default": SubResource("Animation_p20pt")
+}
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbhw1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_som4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_e11b2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_eio2h")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u8r8v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("29_6vr7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_u35js")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_weucu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Demon" type="Node2D"]
 script = ExtResource("1_xwwdn")
 
@@ -198,17 +238,20 @@ script = ExtResource("1_xwwdn")
 position = Vector2(1595, 459)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_606nt")
-frame_progress = 0.613498
+frame_progress = 0.922076
 
 [node name="Logo" type="AnimatedSprite2D" parent="."]
 position = Vector2(1599, 635)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_svelr")
+frame_progress = 0.573767
 
 [node name="Hand" type="AnimatedSprite2D" parent="."]
 position = Vector2(1600, 762)
 scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_vr0rt")
+animation = &"open"
+frame_progress = 0.204745
 
 [node name="Appearing" type="AnimatedSprite2D" parent="."]
 visible = false
@@ -217,3 +260,36 @@ scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_aken6")
 frame = 10
 frame_progress = 1.0
+
+[node name="HeartAndSoul" type="Node2D" parent="."]
+visible = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HeartAndSoul"]
+root_node = NodePath("../Soul")
+libraries = {
+"": SubResource("AnimationLibrary_e8qij")
+}
+autoplay = "default"
+
+[node name="Hand2" type="AnimatedSprite2D" parent="HeartAndSoul"]
+position = Vector2(1604, 699)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_vr0rt")
+animation = &"open"
+autoplay = "open"
+frame_progress = 0.360232
+flip_h = true
+
+[node name="Heart" type="AnimatedSprite2D" parent="HeartAndSoul"]
+position = Vector2(1426, 668.021)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_kbhw1")
+autoplay = "default"
+frame_progress = 0.868759
+
+[node name="Soul" type="AnimatedSprite2D" parent="HeartAndSoul"]
+position = Vector2(1719, 614.361)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_u8r8v")
+autoplay = "default"
+frame_progress = 0.410299

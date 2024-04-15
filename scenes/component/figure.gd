@@ -11,7 +11,7 @@ class_name Figure
 @onready var special = $Foreground/Special
 
 var demonic_special = preload("res://assets/poster_1_demon.png")
-var demonic_poster = "" #preload("")
+var demonic_poster = preload("res://assets/poster_2_demon.png")
 var demonic_jar = preload("res://assets/donation_jar_demon.png")
 
 # Called when the node enters the scene tree for the first time.

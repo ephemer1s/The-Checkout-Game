@@ -57,7 +57,7 @@ func on_mouse_exited_card() -> void:
 func on_mouse_entered_money() -> void:
     if cur_state == State.BAG_READY:
         money.material.set_shader_parameter("onoff", 1)
-        description_to_display.emit("27 US Dollars. 50 years ago this probably could've bought me a house.")
+        description_to_display.emit("27 US Dollars. 50 years ago this probably could've bought me a house. Now I can't even buy a few pounds of meat.")
         animation_player.play("money_enter")
 
 func on_mouse_exited_money() -> void:
@@ -69,7 +69,7 @@ func on_mouse_exited_money() -> void:
 func on_mouse_entered_friend() -> void:
     if cur_state == State.BAG_READY:
         friend.material.set_shader_parameter("onoff", 1)
-        description_to_display.emit("There is a good amount of fluid build up inside. Although the bag is made of thick plastic, I gotta be careful not to pop it.")
+        description_to_display.emit("A plastic bag made with polyethylene. There is a good amount of fluid build up inside. Although the plastic is pretty thick, I gotta be careful not to pop it.")
         animation_player.play("friend_enter")
 
 func on_mouse_exited_friend() -> void:
@@ -126,9 +126,17 @@ func _process(delta: float) -> void:
     elif Input.is_action_just_pressed("confirm") and cur_state == State.BAG_READY:
         get_tree().paused = false;
         animation_player.play("on_cancel")
-        await animation_player.animation_finished
+        contract.material.set_shader_parameter("onoff", 0)
+        money.material.set_shader_parameter("onoff", 0)
+        friend.material.set_shader_parameter("onoff", 0)
+        card.material.set_shader_parameter("onoff", 0)
         inventory_closed.emit()
         bag.modulate = Color(1,1,1)
+
+        if hovering:
+            bag.material.set_shader_parameter("onoff", 1)
+            cur_state = State.HOVERED_BAG
+        await animation_player.animation_finished
         card.visible = false
         friend.visible = false
         money.visible = false
@@ -136,6 +144,3 @@ func _process(delta: float) -> void:
         if not hovering:
             cur_state = State.READY
             animation_player.play("mouse_exit")
-        else:
-            bag.material.set_shader_parameter("onoff", 1)
-            cur_state = State.HOVERED_BAG
