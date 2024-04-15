@@ -6,7 +6,7 @@ This file contain the codes related to the events on the MainMenu scene.
 
 extends Control
 
-
+var game: PackedScene = preload("res://scenes/story/story.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
     #$VBoxContainer/BtnNewGame.grab_focus()
@@ -21,7 +21,7 @@ func _process(delta):
 func _on_btn_new_game_pressed():
     if OS.is_debug_build():
         print("[DEBUG MSG] Button <New Game> Pressed!")
-    get_tree().change_scene_to_file("res://scenes/story/story.tscn")
+    get_tree().change_scene_to_packed(game)
     pass
 
 
