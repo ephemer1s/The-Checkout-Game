@@ -11,9 +11,9 @@
       "mask": "default"
     },
     "description": {
-      "tooltip": "Ah, [there you are]. You're now given [a ten percent discount for today]'s [purchase]!",
-      "desc_shop": "Ah, [there you are]. You're now given [a ten percent discount for today]'s [purchase]!",
-      "desc_demonic": "Ah, [there it is]. You're now given [the full permission to use Blake]'s [flesh]!"
+      "tooltip": "Ah, there [you are]. You're now given [a ten percent discount for today]'s [purchase]!",
+      "desc_shop": "Ah, there [you are]. You're now given [a ten percent discount for today]'s [purchase]!",
+      "desc_demonic": "Ah, there [it is]. You're now given [the full permission to use Blake]'s [flesh]!"
     },
     "option": [
       {

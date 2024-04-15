@@ -11,9 +11,9 @@
       "mask": "laugh"
     },
     "description": {
-      "tooltip": "Great! Thank you for [shopping at JoyMart]. Have a terrific day!",
-      "desc_shop": "Great! Thank you for [shopping at JoyMart]. Have a [terrific] day!",
-      "desc_demonic": "Great! Thank you for [signing at HappyMurder]. Have a [murderous] day!"
+      "tooltip": "Great! Thank you for [shopping] at [JoyMart]. Have a terrific day!",
+      "desc_shop": "Great! Thank you for [shopping] at [JoyMart]. Have a [terrific] day!",
+      "desc_demonic": "Great! Thank you for [signing] at [HappyMurder]. Have a [murderous] day!"
     },
     "option": [
       {

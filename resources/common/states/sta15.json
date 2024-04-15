@@ -12,8 +12,8 @@
     },
     "description": {
       "tooltip": "So that's [your payment]... ",
-      "desc_shop": "So that's [your payment]... ",
-      "desc_demonic": "So that's [the flesh]... "
+      "desc_shop": "So that's your [payment]... ",
+      "desc_demonic": "So that's your [flesh]... "
     },
     "option": [
       {
