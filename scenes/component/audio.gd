@@ -16,7 +16,10 @@ var offset = -15
 func _ready():
     add_child(dummy_player)
     play_bgm("shop")
-    
+    Audio.get_node("sfx_demon_ambient").volume_db = offset
+    Audio.get_node("sfx_demon_laughter").volume_db = offset
+    Audio.get_node("sfx_button_click").volume_db = offset
+    Audio.get_node("sfx_button_highlight").volume_db = offset
     #bgmplayer_shop.stream = load("res://assets/sfx/shop_bgm.mp3")
     #bgmplayer_demon.stream = load("res://assets/sfx/demon_bgm.mp3")
     #bgmplayer_demon2.stream = load("res://assets/sfx/demon_ambient.mp3")
