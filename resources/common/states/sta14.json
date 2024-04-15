@@ -19,13 +19,13 @@
       {
         "id": 1,
         "tooltip": "",
-        "desc": "[CASH AND FLESH]",
+        "desc": "CASH",
         "next": 15
       },
       {
         "id": 2,
         "tooltip": "",
-        "desc": "[CARD AND SOUL]",
+        "desc": "CARD",
         "next": 16
       }
     ]
