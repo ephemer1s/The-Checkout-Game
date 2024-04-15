@@ -116,7 +116,7 @@ layout_mode = 2
 texture = ExtResource("3_07r3i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="MarginContainer2"]
-position = Vector2(610, 290)
+position = Vector2(287.273, 267.273)
 sprite_frames = SubResource("SpriteFrames_tftj2")
 autoplay = "default"
 frame_progress = 0.295766
