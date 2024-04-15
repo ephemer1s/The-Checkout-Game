@@ -15,6 +15,7 @@ func _on_btn_back_pressed():
     #get_tree().current_scene.get_parent().remove_child(get_tree().current_scene)
     Audio.get_node("sfx_button_click").play()
     get_tree().change_scene_to_file("res://scenes/main/main-menu.tscn")
+    queue_free()
 
 
 func _on_btn_back_mouse_entered():
