@@ -9,7 +9,7 @@ extends AudioStreamPlayer
 @onready var bgmdemon = load("res://assets/sfx/demon_bgm.mp3")
 @onready var bgmambient = load("res://assets/sfx/demon_ambient.mp3")
 var fading = false
-var offset = -15
+var offset = -25
 var cur
 
 
@@ -60,20 +60,20 @@ func _process(delta):
     if fading:
         volume_db -= 15 * delta
         dummy_player.volume_db += 15 * delta
-        
+
         if dummy_player.volume_db >= 0 + offset:
             volume_db = 0 + offset
             dummy_player.volume_db = -60 + offset
             stream = dummy_player.stream
             play(dummy_player.get_playback_position())
-            
+
             dummy_player.stop()
             fading = false
-        
+
     pass
 
 
-    
+
 
 
 func _on_finished():

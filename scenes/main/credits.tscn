@@ -82,6 +82,7 @@ text = "PROGRAM: Mizuto"
 layout_mode = 2
 theme = ExtResource("4_gj1ql")
 theme_override_font_sizes/font_size = 40
+text = "https://twitter.com/HeliumGS"
 
 [node name="VBoxContainer3" type="VBoxContainer" parent="VBoxContainer"]
 layout_mode = 2
@@ -131,13 +132,13 @@ theme_override_constants/separation = -20
 layout_mode = 2
 theme = ExtResource("4_gj1ql")
 theme_override_font_sizes/font_size = 48
-text = "UI / UX"
+text = "UI / UX: Bacon"
 
 [node name="Label2" type="Label" parent="VBoxContainer2/VBoxContainer2"]
 layout_mode = 2
 theme = ExtResource("4_gj1ql")
 theme_override_font_sizes/font_size = 40
-text = "https://www.instagram.com/mandyyuhui"
+text = "https://www.instagram.com/mandyyyuhui"
 
 [connection signal="mouse_entered" from="BtnBack" to="." method="_on_btn_back_mouse_entered"]
 [connection signal="pressed" from="BtnBack" to="." method="_on_btn_back_pressed"]

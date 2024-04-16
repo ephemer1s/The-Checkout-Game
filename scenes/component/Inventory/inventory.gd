@@ -57,7 +57,7 @@ func on_mouse_exited_card() -> void:
 func on_mouse_entered_money() -> void:
     if cur_state == State.BAG_READY:
         money.material.set_shader_parameter("onoff", 1)
-        description_to_display.emit("27 US Dollars. 50 years ago this probably could've bought me a house. Now I can't even buy a few pounds of meat.")
+        description_to_display.emit("30 US Dollars. 50 years ago this probably could've bought me a house. Now I can't even buy a few pounds of meat.")
         animation_player.play("money_enter")
 
 func on_mouse_exited_money() -> void:

@@ -28,7 +28,7 @@ func on_text_finished() -> void:
         return
 
     if len(parser.itemData["content"]["option"]) == 1:
-        if parser.itemData["content"]["option"][0]["tooltip"] == "alternative" and cost_total > 27:
+        if parser.itemData["content"]["option"][0]["tooltip"] == "alternative" and cost_total > 30:
             Autoload.emit_transition_to(parser.itemData["content"]["option"][0]['alternative'], get_money_action(parser.itemData["content"]["option"][0]))
         elif parser.itemData["content"]["option"][0]["tooltip"] == "alt_ending" and !named_blake:
             Autoload.emit_transition_to(parser.itemData["content"]["option"][0]['alt_ending'], get_money_action(parser.itemData["content"]["option"][0]))
